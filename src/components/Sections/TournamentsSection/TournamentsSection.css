@@ -1,0 +1,41 @@
+.bg5 {
+  background: linear-gradient(#4d0b92, #510ca000, #28209f),
+    url("/src/assets/bgtour.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+}
+.tourBlock_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tourText_block {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.tourText_bigger {
+  font-size: 3.9rem;
+}
+.tourText_big {
+  letter-spacing: 8px;
+}
+.tourText_small {
+  margin: 4rem 0 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.tourBlock_img {
+  margin-bottom: 4rem;
+}
+.tourFork_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* .tourFork_block > img {
+  position: absolute;
+  left: -20px;
+} */

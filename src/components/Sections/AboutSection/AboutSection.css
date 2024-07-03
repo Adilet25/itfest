@@ -1,0 +1,47 @@
+.bg7 {
+  background: linear-gradient(#3a63d1, #6d91ff00, #3a63d1),
+    url("/src/assets/bgab.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.expoAbout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.expoAbout_div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 2rem 0 2rem;
+  margin-bottom: 2rem;
+}
+.expoAbout_div > h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.exp1 > p {
+  margin-bottom: 1rem;
+}
+.exp1,
+.exp3 {
+  background: linear-gradient(
+    #8816ca00,
+    #8816caf6,
+    #8816ca,
+    #8816caf6,
+    #8816ca00
+  );
+}
+.expTextBold {
+  font-weight: 700;
+}
+.exp3 {
+  line-height: 1.5rem;
+}

@@ -1,0 +1,71 @@
+.bg6 {
+  background: linear-gradient(#28209f, #510ca000, #3a63d1),
+    url("/src/assets/bgexpo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.expoBlock_main {
+  display: flex;
+  flex-direction: row;
+}
+.expoBlock_main > div {
+  width: 50%;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.expoBlock_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35rem;
+  width: 86%;
+  margin-top: 6rem;
+  margin-bottom: 15rem;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+.expoBlock_info > ul {
+  width: 80%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.expoBlock_info > h3 {
+  font-size: 2rem;
+}
+.expoBlock_info > h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.infoBlock1 {
+  border: 4px solid #d6d6d6;
+  background: linear-gradient(
+    180deg,
+    rgba(188, 193, 194, 0.7) 0%,
+    rgba(113, 112, 108, 0.7) 100%
+  );
+
+  backdrop-filter: blur(5px);
+}
+.infoBlock2 {
+  border: 4px solid #ffe599;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 207, 64, 0.8) 0%,
+    rgba(166, 124, 0, 0.8) 100%
+  );
+
+  backdrop-filter: blur(5px);
+}
+.expoCassa {
+  position: absolute;
+  left: -5rem;
+  top: -6rem;
+}
+.expoSale_img {
+  position: absolute;
+  right: -8rem;
+  bottom: -12rem;
+  width: 10rem;
+}
