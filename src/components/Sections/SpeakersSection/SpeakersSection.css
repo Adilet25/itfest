@@ -1,0 +1,100 @@
+.bg9 {
+  background: linear-gradient(#3a63d1, #6d91ff00, #3a63d1),
+    url("/src/assets/bgspe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.speakBlock_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.speakBlock_title {
+  margin-top: 7rem;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 7rem;
+}
+.speakList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.speakBlock_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  background: linear-gradient(
+    180deg,
+    rgba(75, 199, 251, 0.7) 0%,
+    rgba(145, 45, 218, 0.7) 100%
+  );
+  padding: 2rem 1rem;
+}
+.speakBlock_card > h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.speakBlock_card > p {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.speakBlock_circle {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.showBlock_main {
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.showBlock_img {
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+  width: 100%;
+}
+.showBlock_title {
+  font-family: 900;
+  font-size: 4rem;
+}
+.showBlock_title2 {
+  margin-top: 4rem;
+  font-family: 600;
+  font-size: 1.5rem;
+}
+.showBlock_info {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 184, 0, 0.8) 0%,
+    rgba(206, 49, 0, 0.8) 100%
+  );
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.infoEsp_block {
+  display: flex;
+  flex-direction: column;
+}
+.showBig_text {
+  font-size: 4rem;
+}
+.espG {
+  font-size: 5rem;
+}

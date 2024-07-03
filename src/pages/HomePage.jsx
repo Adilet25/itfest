@@ -5,6 +5,8 @@ import PartnerSection from "../components/Sections/PartnerSection/PartnerSection
 import TournamentsSection from "../components/Sections/TournamentsSection/TournamentsSection";
 import ExpoSection from "../components/Sections/ExpoSection/ExpoSection";
 import AboutSection from "../components/Sections/AboutSection/AboutSection";
+import WorkSection from "../components/Sections/WorkSection/WorkSection";
+import SpeakersSection from "../components/Sections/SpeakersSection/SpeakersSection";
 
 const HomePage = () => {
   return (
@@ -15,6 +17,8 @@ const HomePage = () => {
       <TournamentsSection />
       <ExpoSection />
       <AboutSection />
+      <WorkSection />
+      <SpeakersSection />
     </div>
   );
 };
