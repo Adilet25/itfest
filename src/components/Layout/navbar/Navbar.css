@@ -1,0 +1,15 @@
+.navBlock_main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBlock_logo {
+  width: 5rem;
+}
+.bg2 {
+  background-color: #3b2069;
+}
+.navBlock_nav {
+  cursor: pointer;
+}
