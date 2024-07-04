@@ -11,7 +11,7 @@ const SpeakersSection = () => {
           <div className="speakList">
             <div className="speakBlock_card">
               <div className="speakBlock_circle"></div>
-              <h3>Владимир Путин</h3>
+              <h3>Искенов Даурен</h3>
               <p>
                 Ветеран Третьей мировой войны, амбассадор Батыя. Программист,
                 создатель яндекса, а также ментор в БГУ со стажем 92 года.
@@ -19,7 +19,7 @@ const SpeakersSection = () => {
             </div>
             <div className="speakBlock_card">
               <div className="speakBlock_circle"></div>
-              <h3>Владимир Путин</h3>
+              <h3>Соколовский Олег</h3>
               <p>
                 Ветеран Третьей мировой войны, амбассадор Батыя. Программист,
                 создатель яндекса, а также ментор в БГУ со стажем 92 года.
@@ -27,7 +27,7 @@ const SpeakersSection = () => {
             </div>
             <div className="speakBlock_card">
               <div className="speakBlock_circle"></div>
-              <h3>Владимир Путин</h3>
+              <h3>Сон Тэхун</h3>
               <p>
                 Ветеран Третьей мировой войны, амбассадор Батыя. Программист,
                 создатель яндекса, а также ментор в БГУ со стажем 92 года.
@@ -35,7 +35,7 @@ const SpeakersSection = () => {
             </div>
             <div className="speakBlock_card">
               <div className="speakBlock_circle"></div>
-              <h3>Владимир Путин</h3>
+              <h3>Ederson Dos Santos</h3>
               <p>
                 Ветеран Третьей мировой войны, амбассадор Батыя. Программист,
                 создатель яндекса, а также ментор в БГУ со стажем 92 года.
