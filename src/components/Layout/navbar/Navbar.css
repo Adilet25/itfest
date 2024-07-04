@@ -12,4 +12,37 @@
 }
 .navBlock_nav {
   cursor: pointer;
+  margin-right: 1rem;
+}
+
+.navArrow {
+  width: 1rem;
+  transition: 0.5s;
+}
+.navBlock_mini {
+  position: relative;
+}
+.navBlock_mini2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.navDrop {
+  position: absolute;
+  text-align: end;
+  top: 2rem;
+  right: 2rem;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  background: linear-gradient(#3b206900, #41237784, #3b2069);
+  padding: 1rem;
+  border-radius: 6px;
+}
+.navDrop > p {
+  margin-top: 5px;
+}
+.falseAr {
+  transform: rotate(180deg);
 }
