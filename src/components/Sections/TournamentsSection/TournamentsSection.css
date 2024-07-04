@@ -33,9 +33,58 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* display: grid;
+  grid-template-columns: repeat(1, 1fr); */
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
 }
-/* .tourFork_block > img {
+.tourFork_blockParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.tourFork_block > img {
   position: absolute;
-  left: -20px;
-} */
+  width: 22%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.tourFork_block > img:hover {
+  z-index: 100;
+  transform: scale(1.3);
+}
+.tourForkimg1 {
+  left: 15%;
+  z-index: 10;
+}
+
+.tourForkimg2 {
+  left: 25%;
+  z-index: 9;
+}
+
+.tourForkimg3 {
+  left: 35%;
+  z-index: 8;
+}
+
+.tourForkimg4 {
+  left: 45%;
+  z-index: 7;
+}
+
+.tourForkimg5 {
+  left: 55%;
+  z-index: 6;
+}
+
+.tourForkimg6 {
+  left: 65%;
+  z-index: 5;
+}

@@ -30,13 +30,15 @@ const TournamentsSection = () => {
           <p className="tourText_small">Турниры по направлениям</p>
           <img src={chek} alt="error" className="tourBlock_img" />
         </div>
-        <div className="tourFork_block">
-          <img src={tour1} alt="error" />
-          <img src={tour2} alt="error" />
-          <img src={tour3} alt="error" />
-          {/* <img src={tour4} alt="error" />
-          <img src={tour5} alt="error" />
-          <img src={tour6} alt="error" /> */}
+        <div className="tourFork_blockParent">
+          <div className="tourFork_block">
+            <img src={tour1} alt="error" className="tourForkimg1" />
+            <img src={tour2} alt="error" className="tourForkimg2" />
+            <img src={tour3} alt="error" className="tourForkimg3" />
+            <img src={tour4} alt="error" className="tourForkimg4" />
+            <img src={tour5} alt="error" className="tourForkimg5" />
+            <img src={tour6} alt="error" className="tourForkimg6" />
+          </div>
         </div>
       </div>
     </div>
