@@ -14,11 +14,11 @@ const HomePage = () => {
       <MainSection />
       <SecondSection />
       <PartnerSection />
-      <TournamentsSection />
+      {/* <TournamentsSection />
       <ExpoSection />
       <AboutSection />
       <WorkSection />
-      <SpeakersSection />
+      <SpeakersSection /> */}
     </div>
   );
 };

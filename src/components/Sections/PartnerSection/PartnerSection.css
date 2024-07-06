@@ -45,3 +45,12 @@
 .partnerMini_3 {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .parnterBlock_imgs > img {
+    width: 5rem;
+  }
+  .partnerBlock_mini {
+    height: 10rem;
+    font-size: 1.3rem;
+  }
+}

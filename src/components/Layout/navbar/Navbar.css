@@ -46,3 +46,28 @@
 .falseAr {
   transform: rotate(180deg);
 }
+.MuiDrawer-paperAnchorRight {
+  background-color: #3d3d75 !important;
+  color: #979797 !important;
+}
+.navDrawer {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .navBlock_nav {
+    display: none;
+  }
+  .navBlock_mini {
+    display: none;
+  }
+  .navDrawer {
+    display: block;
+  }
+}
+.navDropDown_logo {
+  width: 60%;
+  margin: 0 auto;
+}
+.MuiList-root {
+  padding-left: 1rem !important;
+}

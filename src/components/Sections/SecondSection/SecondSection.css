@@ -25,13 +25,17 @@
   flex-direction: column;
   justify-content: center;
 
-  padding-left: 2rem;
+  padding: 0 2rem 0 1rem;
 }
 .secondMain_first > p {
   margin-top: 3rem;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  z-index: 2;
+}
+.secondMain_first > h2 {
+  z-index: 10 !important;
 }
 .secondMain_second {
   padding: 20rem 0 2rem 0;
@@ -69,6 +73,115 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+#secondBlock_img {
+  width: 100% !important;
+}
 #secondBlock_text {
   margin: 2rem 0;
+}
+@media screen and (max-width: 1024px) {
+  .secondBlock_main {
+    grid-template-columns: repeat(3, 30%);
+    gap: 0;
+    justify-content: space-between;
+  }
+  .bg3 {
+    background-size: cover;
+  }
+  .secondMain_second {
+    padding-top: 15rem;
+  }
+  .secondMain_third {
+    font-size: 1rem;
+  }
+  .fs2 {
+    font-size: 1.5rem;
+  }
+
+  .secondMain_first > p {
+    font-size: 0.9rem;
+  }
+  .secondMain_first > h2 {
+    z-index: 10 !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .secondMain_second {
+    padding-top: 10rem;
+  }
+  .secondMain_third {
+    font-size: 0.8rem;
+  }
+  .fs2 {
+    font-size: 1.5rem;
+  }
+  .secondMain_first {
+    height: 30rem;
+    padding-top: 5rem;
+    background: linear-gradient(
+      #3b2069,
+      rgba(8, 212, 253, 0.2),
+      rgba(8, 212, 253, 0.3)
+    );
+    box-shadow: 0px 0px 10px -10px grey;
+    /* justify-content: end; */
+  }
+  .secondMain_first > p {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .secondMain_first > h2 {
+    font-size: 1.5rem;
+  }
+  .secondBlock_main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #secondBlock_img {
+    width: 70% !important ;
+  }
+  .secondBlock_sponsors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    padding: 0 2rem 0 2rem;
+  }
+  #secondBlock_text {
+    font-size: 2rem;
+    margin: 4rem 0;
+  }
+  .secondMain_third {
+    background: linear-gradient(
+      rgba(8, 212, 253, 0.3),
+      rgba(8, 212, 253, 0.2),
+      #3b2069
+    );
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 480px) {
+  .secondMain_first > p {
+    font-size: 1rem;
+  }
+  .fs2 {
+    font-size: 3rem;
+  }
+  .secondMain_third {
+    /* display: none; */
+    font-size: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
 }

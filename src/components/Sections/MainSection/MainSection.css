@@ -25,6 +25,7 @@
   font-weight: 800;
   text-align: center;
   /* text-justify: inter-cluster; */
+  z-index: 3;
 }
 .firstMain_text > p {
   width: 100%;
@@ -37,11 +38,15 @@
   font-weight: 600;
   font-size: 0.7em;
 }
+.tearsBlock {
+  position: relative;
+}
 #el1 {
   position: absolute;
   left: -200px;
-  bottom: -24rem;
+  bottom: -45vh;
   z-index: 1;
+  width: 40%;
 }
 #el2 {
   position: absolute;
@@ -50,4 +55,79 @@
   transform: rotate(90deg);
   z-index: 1;
   width: 25%;
+}
+@media screen and (max-width: 1345px) {
+  .firstMain_text {
+    font-size: 2em;
+  }
+  .firstMain_text > p {
+    font-size: 1em;
+  }
+  .firstMain_text > h2 {
+    font-size: 2em;
+  }
+  #firstDate {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #el1 {
+    left: -100px;
+    bottom: -25vh;
+    width: 30%;
+  }
+  #el2 {
+    right: -0px;
+    bottom: -30vh;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 860px) {
+  #el1 {
+    left: -100px;
+    bottom: -20vh;
+    width: 30%;
+  }
+  #el2 {
+    right: -0px;
+    bottom: -25vh;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .firstMain_text {
+    font-size: 2em;
+    width: 100%;
+  }
+  .firstMain_text > p {
+    font-size: 1em;
+  }
+  .firstMain_text > h2 {
+    font-size: 2em;
+  }
+  #firstDate {
+    font-size: 1em;
+  }
+  .firstBlock_main {
+    flex-direction: column;
+  }
+  .bg1 {
+    background-size: cover;
+    background-position: center;
+  }
+  .firstBlock_logo {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .firstMain_text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .firstMain_text {
+    font-size: 1em;
+    width: 100%;
+  }
 }
