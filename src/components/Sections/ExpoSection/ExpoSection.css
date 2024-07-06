@@ -69,3 +69,122 @@
   bottom: -12rem;
   width: 10rem;
 }
+@media screen and (max-width: 1370px) {
+  .expoBlock_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* .expoCassa {
+    width: 40%;
+  } */
+  .expoBlock_info > ul {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .expoBlock_info > h3 {
+    font-size: 2rem;
+  }
+  .expoBlock_info > h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .expoBlock_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .expoCassa {
+    width: 40%;
+    left: -3rem;
+    top: -5rem;
+  }
+  .expoBlock_info > ul {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .expoBlock_info > h3 {
+    font-size: 2rem;
+  }
+  .expoBlock_info > h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .expoBlock_main {
+    flex-direction: column;
+  }
+  .expoSale_img {
+    right: -4rem;
+    bottom: -7.3rem;
+    width: 6rem;
+  }
+  .expoBlock_info {
+    margin-bottom: 0;
+    height: auto;
+  }
+  .expoBlock_main > div {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10rem;
+
+    width: 100%;
+  }
+  .expoBlock_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .expoCassa {
+    width: 30%;
+    left: -3rem;
+    top: -5rem;
+  }
+  .expoBlock_info > ul {
+    width: 80%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .expoBlock_info > h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .expoSale_img {
+    right: -3rem;
+    bottom: -7.3rem;
+    width: 6rem;
+  }
+  .expoCassa {
+    width: 40%;
+    left: -3rem;
+    top: -5rem;
+  }
+  .expoBlock_info > ul {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .expoSale_img {
+    right: -2rem;
+    bottom: -7.3rem;
+    width: 6rem;
+  }
+  .expoCassa {
+    width: 50%;
+    left: -2rem;
+    top: -5rem;
+  }
+  .expoBlock_info > ul {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+  .expoBlock_info > h3 {
+    font-size: 2.5rem;
+  }
+}

@@ -37,7 +37,7 @@
   /* display: grid;
   grid-template-columns: repeat(1, 1fr); */
   position: relative;
-  height: 80vh;
+  height: 50vmax;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
@@ -87,4 +87,84 @@
 .tourForkimg6 {
   left: 65%;
   z-index: 5;
+}
+@media screen and (max-width: 1100px) {
+  .tourBlock_img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tourFork_blockParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+  }
+  .tourFork_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: auto;
+  }
+  .tourFork_block > img {
+    position: relative;
+    width: 100%;
+  }
+  .tourFork_block > img:hover {
+    z-index: 100;
+    transform: none;
+  }
+  .tourForkimg1 {
+    left: 0;
+    z-index: 10;
+  }
+
+  .tourForkimg2 {
+    left: 0;
+    z-index: 9;
+  }
+
+  .tourForkimg3 {
+    left: 0;
+    z-index: 8;
+  }
+
+  .tourForkimg4 {
+    left: 0;
+    z-index: 7;
+  }
+
+  .tourForkimg5 {
+    left: 0;
+    z-index: 6;
+  }
+
+  .tourForkimg6 {
+    left: 0;
+    z-index: 5;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tourText_block {
+    font-size: 1.5rem;
+  }
+  .tourText_bigger {
+    font-size: 2rem;
+  }
+  .tourText_big {
+    letter-spacing: 8px;
+  }
+  .tourText_small {
+    font-size: 1.4rem;
+  }
+  .bg5 {
+    padding: 0;
+  }
+  .tourFork_block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tourBlock_img {
+    width: 80%;
+  }
 }

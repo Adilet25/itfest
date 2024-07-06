@@ -15,10 +15,10 @@
   position: absolute;
 }
 .leftImg {
-  right: 24rem;
+  right: 20%;
 }
 .rightImg {
-  left: 24rem;
+  left: 20%;
 }
 .workList_img {
   width: 4rem;
@@ -34,6 +34,7 @@
   margin-bottom: 10rem;
   font-weight: 900;
   font-size: 4rem;
+  text-align: center;
 }
 .workBlock_list {
   display: grid;
@@ -57,4 +58,78 @@
   margin-bottom: 3rem;
   font-size: 1.3rem;
   font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .workList_item > p {
+    font-size: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .leftImg {
+    right: 15%;
+  }
+  .rightImg {
+    left: 15%;
+  }
+  .workBlock_title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 666px) {
+  .workBlock_list {
+    width: 100%;
+  }
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 4rem;
+  }
+  .leftImg {
+    right: 10%;
+  }
+  .rightImg {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .workList_circle {
+    transform: scale(0.8);
+  }
+  .workList_item {
+    height: 5rem;
+  }
+  .itemRight {
+    justify-content: end !important;
+  }
+  .itemLeft {
+    justify-content: start !important;
+  }
+  .workList_item > p {
+    margin: 0;
+    width: 60%;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .workBlock_title {
+    font-size: 1.5rem;
+  }
 }

@@ -18,55 +18,55 @@ const WorkSection = () => {
         <div className="workBlock_main">
           <h2 className="workBlock_title">ТЕМЫ ВОРКШОПОВ</h2>
           <div className="workBlock_list">
-            <div className="workList_item">
+            <div className="workList_item itemLeft">
               <p>КИБЕРБЕЗОПАСНОСТЬ</p>
               <div className="workList_circle leftImg">
                 <img src={logo1} alt="error" className="workList_img" />
               </div>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemRight">
               <div className="workList_circle rightImg">
                 <img src={logo2} alt="error" className="workList_img" />
               </div>
               <p>ИНВЕСТИЦИИ В IT</p>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemLeft">
               <p>ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</p>
               <div className="workList_circle leftImg">
                 <img src={logo3} alt="error" className="workList_img" />
               </div>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemRight">
               <div className="workList_circle rightImg">
                 <img src={logo4} alt="error" className="workList_img" />
               </div>
               <p>АВТОРСКОЕ ПРАВО И ПАТЕНТИРОВАНИЕ</p>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemLeft">
               <p>IT ПРОДУКТЫ И ИХ ПРИМЕНЕНИЕ</p>
               <div className="workList_circle leftImg">
                 <img src={logo5} alt="error" className="workList_img" />
               </div>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemRight">
               <div className="workList_circle rightImg">
                 <img src={logo6} alt="error" className="workList_img" />
               </div>
               <p>ЛИЧНЫЙ БРЕНД И ФРИЛАНС</p>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemLeft">
               <p>МАРКЕТИНГ И РЕКЛАМА</p>
               <div className="workList_circle leftImg">
                 <img src={logo7} alt="error" className="workList_img" />
               </div>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemRight">
               <div className="workList_circle rightImg">
                 <img src={logo8} alt="error" className="workList_img" />
               </div>
               <p>МЕНЕДЖМЕНТ И ПРОДАЖИ</p>
             </div>
-            <div className="workList_item">
+            <div className="workList_item itemLeft">
               <p>ИННОВАЦИИ В ТУРИЗМЕ</p>
               <div className="workList_circle leftImg">
                 <img src={logo9} alt="error" className="workList_img" />

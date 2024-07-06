@@ -9,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .expoAbout_div {
   width: 30%;
@@ -44,4 +44,39 @@
 }
 .exp3 {
   line-height: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .expoAbout {
+    flex-direction: column;
+  }
+  .expoAbout_div {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+  .exp1,
+  .exp3 {
+    background: linear-gradient(
+      180deg,
+      rgba(135, 22, 202, 0.8) 0%,
+      rgba(42, 13, 138, 0.8) 100%
+    );
+    padding: 2rem 0;
+  }
+  .exp1 > p,
+  .exp3 > ul,
+  .exp2 > p {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .exp1 > p,
+  .exp2 > p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .exp3 > ul {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
 }

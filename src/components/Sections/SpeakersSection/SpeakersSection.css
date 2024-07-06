@@ -98,3 +98,53 @@
 .espG {
   font-size: 5rem;
 }
+@media screen and (max-width: 1024px) {
+  .speakList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .speakBlock_card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .speakList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .speakBlock_card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .showBlock_title,
+  .speakBlock_title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .espG {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .showBlock_info {
+    font-size: 1.6rem;
+  }
+  .showBig_text {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .infoEsp {
+    display: flex;
+    flex-direction: column;
+  }
+  .showBlock_title,
+  .speakBlock_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
