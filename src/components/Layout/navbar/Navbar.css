@@ -64,10 +64,10 @@
     display: block;
   }
 }
+.MuiList-root {
+  padding-left: 1rem !important;
+}
 .navDropDown_logo {
   width: 60%;
   margin: 0 auto;
-}
-.MuiList-root {
-  padding-left: 1rem !important;
 }
