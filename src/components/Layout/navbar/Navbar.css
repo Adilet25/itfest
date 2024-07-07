@@ -7,6 +7,7 @@
 .navBlock_logo {
   width: 5rem;
 }
+
 .bg2 {
   background-color: #3b2069;
 }
@@ -53,6 +54,39 @@
 .navDrawer {
   display: none;
 }
+.navDropdown {
+  width: 70%;
+}
+.navDrop_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.navDrop_ar {
+  width: 1rem;
+}
+.trueDrop {
+  transform: rotate(180deg);
+}
+.navDropdown_list {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+.navDrop_reg {
+  margin: 1rem auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.MuiDrawer-paper {
+  padding-top: 1rem;
+}
+
 @media screen and (max-width: 1024px) {
   .navBlock_nav {
     display: none;
