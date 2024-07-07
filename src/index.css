@@ -10,3 +10,6 @@
   width: 90%;
   margin: 0 auto;
 }
+.MuiList-root {
+  padding: 0 !important;
+}

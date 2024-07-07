@@ -12,6 +12,7 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
+import ListItem from "@mui/material/ListItem";
 import menuicon from "../../../assets/menu.svg";
 
 import "./Navbar.css";
@@ -21,6 +22,11 @@ const Navbar = () => {
   const [arrowSt1, setArrowSt1] = useState(false);
   const [arrowSt2, setArrowSt2] = useState(false);
   const [arrowSt3, setArrowSt3] = useState(false);
+  const [arrowDrop1, setDrop1] = useState(false);
+  const [arrowDrop2, setDrop2] = useState(false);
+  const [arrowDrop3, setDrop3] = useState(false);
+  const [arrowDrop4, setDrop4] = useState(false);
+
   const [open2, setOpen] = React.useState(false);
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -34,7 +40,8 @@ const Navbar = () => {
           <div className="navBlock_mini">
             <div
               className="navBlock_mini2"
-              onClick={() => setArrowSt(!arrowSt)}>
+              onClick={() => setArrowSt(!arrowSt)}
+            >
               <p className="navBlock_nav">О мероприятии</p>
               <img
                 src={arrow}
@@ -61,7 +68,8 @@ const Navbar = () => {
           <div className="navBlock_mini">
             <div
               className="navBlock_mini2"
-              onClick={() => setArrowSt1(!arrowSt1)}>
+              onClick={() => setArrowSt1(!arrowSt1)}
+            >
               <p className="navBlock_nav">Участникам</p>
               <img
                 src={arrow}
@@ -85,7 +93,8 @@ const Navbar = () => {
           <div className="navBlock_mini">
             <div
               className="navBlock_mini2"
-              onClick={() => setArrowSt2(!arrowSt2)}>
+              onClick={() => setArrowSt2(!arrowSt2)}
+            >
               <p className="navBlock_nav">Посетителям</p>
               <img
                 src={arrow}
@@ -107,7 +116,8 @@ const Navbar = () => {
           <div className="navBlock_mini">
             <div
               className="navBlock_mini2"
-              onClick={() => setArrowSt3(!arrowSt3)}>
+              onClick={() => setArrowSt3(!arrowSt3)}
+            >
               <p className="navBlock_nav">Спонсорам и партнёрам</p>
               <img
                 src={arrow}
@@ -131,128 +141,209 @@ const Navbar = () => {
               <img src={menuicon} alt="error" style={{ width: "2.6rem" }} />
             </Button>
             <Drawer anchor={"right"} open={open2} onClose={toggleDrawer(false)}>
-              {/* <Box
+              <Box
                 sx={{ width: 250 }}
                 role="presentation"
-                onClick={toggleDrawer(false)}>
+                onClick={toggleDrawer(true)}
+              >
+                <List>
+                  <div
+                    className="navDrop_block"
+                    onClick={() => setDrop1(!arrowDrop1)}
+                  >
+                    <div className="navDropdown">О мероприятии</div>
+                    <img
+                      src={arrow}
+                      alt="error"
+                      className={`${arrowDrop1}Drop navDrop_ar`}
+                    />
+                  </div>
+                  {arrowDrop1 ? (
+                    <div className="navDropdown_list">
+                      <ListItemButton>
+                        <p>Организаторы</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Локация</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Программы</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Воркшопы и спикеры</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>EXPO</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Мастер классы</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Концертная программа</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>After Party</p>
+                      </ListItemButton>
+                      <Divider />
+                      <ListItemButton>
+                        <p>Спонсоры и партнёры</p>
+                      </ListItemButton>
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                </List>
+              </Box>
+              <Box
+                sx={{ width: 250 }}
+                role="presentation"
+                onClick={toggleDrawer(true)}
+              >
+                <List>
+                  <div
+                    className="navDrop_block"
+                    onClick={() => setDrop2(!arrowDrop2)}
+                  >
+                    <div className="navDropdown">Участникам</div>
+                    <img
+                      src={arrow}
+                      alt="error"
+                      className={`${arrowDrop2}Drop navDrop_ar`}
+                    />
+                  </div>
+                  {arrowDrop2 ? (
+                    <div className="navDropdown_list">
+                      <ListItemButton>
+                        <p>Преимущества участия</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Разделы фестиваля</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Билет</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Отборочный тур и финал</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Проживание и трансфер</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Модераторы турниров</p>
+                      </ListItemButton>
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                </List>
+              </Box>
+              <Box
+                sx={{ width: 250 }}
+                role="presentation"
+                onClick={toggleDrawer(true)}
+              >
+                <List>
+                  <div
+                    className="navDrop_block"
+                    onClick={() => setDrop3(!arrowDrop3)}
+                  >
+                    <div className="navDropdown">Посетителям</div>
+                    <img
+                      src={arrow}
+                      alt="error"
+                      className={`${arrowDrop3}Drop navDrop_ar`}
+                    />
+                  </div>
+                  {arrowDrop3 ? (
+                    <div className="navDropdown_list">
+                      <ListItemButton>
+                        <p>Что вас ожидает?</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Проживание от партнёров</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Билет</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Как добраться?</p>
+                      </ListItemButton>
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                </List>
+              </Box>
+              <Box
+                sx={{ width: 250 }}
+                role="presentation"
+                onClick={toggleDrawer(true)}
+              >
+                <List>
+                  <div
+                    className="navDrop_block"
+                    onClick={() => setDrop4(!arrowDrop4)}
+                  >
+                    <div className="navDropdown">Спонсорам и партнёрам</div>
+                    <img
+                      src={arrow}
+                      alt="error"
+                      className={`${arrowDrop4}Drop navDrop_ar`}
+                    />
+                  </div>
+                  {arrowDrop4 ? (
+                    <div className="navDropdown_list">
+                      <ListItemButton>
+                        <p>Ваши возможности</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Преимущества</p>
+                      </ListItemButton>
+                      <Divider />
+
+                      <ListItemButton>
+                        <p>Рекламные возможности</p>
+                      </ListItemButton>
+                    </div>
+                  ) : (
+                    <div></div>
+                  )}
+                </List>
+              </Box>
+              <Box
+                sx={{ width: 250 }}
+                role="presentation"
+                onClick={toggleDrawer(true)}
+              >
                 <List>
                   <ListItemButton>
-                    <img src={logo} alt="error" className="navDropDown_logo" />
+                    <div className="navDrop_reg">Регистрация</div>
                   </ListItemButton>
-                </List>
-              </Box> */}
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={toggleDrawer(false)}>
-                <List>
-                  О мероприятии
-                  <div className="navDropdown_list">
-                    <ListItemButton>
-                      <p>Организаторы</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Локация</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Программы</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Воркшопы и спикеры</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>EXPO</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Мастер классы</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Концертная программа</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>After Party</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Спонсоры и партнёры</p>
-                    </ListItemButton>
-                  </div>
-                </List>
-              </Box>
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={toggleDrawer(false)}>
-                <List>
-                  Участникам
-                  <div className="navDropdown_list">
-                    <ListItemButton>
-                      <p>Преимущества участия</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Разделы фестиваля</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Билет</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Отборочный тур и финал</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Проживание и трансфер</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Модераторы турниров</p>
-                    </ListItemButton>
-                  </div>
-                </List>
-              </Box>
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={toggleDrawer(false)}>
-                <List>
-                  Посетителям
-                  <div className="navDropdown_list">
-                    <ListItemButton>
-                      <p>Что вас ожидает?</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Проживание от партнёров</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Билет</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Как добраться?</p>
-                    </ListItemButton>
-                  </div>
-                </List>
-              </Box>
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={toggleDrawer(false)}>
-                <List>
-                  Спонсорам и партнёрам
-                  <div className="navDropdown_list">
-                    <ListItemButton>
-                      <p>Ваши возможности</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Преимущества</p>
-                    </ListItemButton>
-                    <ListItemButton>
-                      <p>Рекламные возможности</p>
-                    </ListItemButton>
-                  </div>
-                </List>
-              </Box>
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={toggleDrawer(false)}>
-                <List>
-                  <ListItemButton>Регистрация</ListItemButton>
                 </List>
               </Box>
             </Drawer>

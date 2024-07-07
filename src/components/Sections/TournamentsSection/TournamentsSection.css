@@ -57,7 +57,7 @@
 }
 .tourFork_block > img:hover {
   z-index: 100;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 .tourForkimg1 {
   left: 15%;
