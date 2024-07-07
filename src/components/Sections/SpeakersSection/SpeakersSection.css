@@ -73,20 +73,18 @@
   font-size: 1.5rem;
 }
 .showBlock_info {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 184, 0, 0.8) 0%,
-    rgba(206, 49, 0, 0.8) 100%
-  );
   width: 100%;
   height: 8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
+  backdrop-filter: blur(15px);
+  position: relative;
+  z-index: 2;
 }
 .infoEsp_block {
   display: flex;
@@ -98,6 +96,120 @@
 .espG {
   font-size: 5rem;
 }
+.show1 {
+  background: linear-gradient(180deg, #ff282880, #c8c10480);
+}
+.show2 {
+  background: linear-gradient(180deg, #e4e4e480, #9c2c0a80);
+}
+.show3 {
+  background: linear-gradient(180deg, #00ffd080, #8913ff80);
+}
+.show4 {
+  background: linear-gradient(180deg, #faff0080, #ff330680);
+}
+.show5 {
+  background: linear-gradient(180deg, #00ff9480, #ff883180);
+}
+.show6 {
+  background: linear-gradient(180deg, #fd27db80, #ffa03180);
+}
+.show7 {
+  background: linear-gradient(180deg, #ff50a480, #20ffd780);
+}
+.show8 {
+  background: linear-gradient(180deg, #2979ef, #000b1c);
+}
+.showimg {
+  /* position: absolute; */
+}
+.showimg11 {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+.showimg12 {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+}
+.showimg21 {
+  position: absolute;
+  width: 15%;
+  left: 20%;
+  bottom: 0;
+}
+.showimg22 {
+  position: absolute;
+  right: 20%;
+  width: 15%;
+}
+.showimg31 {
+  position: absolute;
+  left: 20%;
+  width: 13%;
+}
+.showimg32 {
+  position: absolute;
+  right: 20%;
+  width: 13%;
+}
+.showimg41 {
+  position: absolute;
+  width: 18%;
+  left: 20%;
+}
+.showimg42 {
+  position: absolute;
+  width: 20%;
+  right: 18%;
+}
+.showimg51 {
+  position: absolute;
+  width: 18%;
+  left: 20%;
+  bottom: 0;
+}
+.showimg52 {
+  position: absolute;
+  width: 18%;
+  right: 20%;
+  bottom: 0;
+}
+.showimg6 {
+  width: 23%;
+}
+.showimg62 {
+  width: 23%;
+  transform: rotateY(180deg);
+}
+
+.showimg71 {
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  left: 5%;
+  z-index: -1;
+}
+.showimg72 {
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  right: 5%;
+  z-index: -1;
+}
+.showimg81 {
+  position: absolute;
+  width: 20%;
+  left: 10%;
+}
+.showimg82 {
+  position: absolute;
+  width: 20%;
+  right: 10%;
+}
 @media screen and (max-width: 1024px) {
   .speakList {
     display: grid;
@@ -107,6 +219,24 @@
   .speakBlock_card {
     width: 80%;
     margin: 0 auto;
+  }
+  .showimg11,
+  .showimg21,
+  .showimg31,
+  .showimg41,
+  .showimg51,
+  .showimg61,
+  .showimg81 {
+    left: 10%;
+  }
+  .showimg12,
+  .showimg22,
+  .showimg32,
+  .showimg42,
+  .showimg52,
+  .showimg62,
+  .showimg82 {
+    right: 10%;
   }
 }
 @media screen and (max-width: 768px) {

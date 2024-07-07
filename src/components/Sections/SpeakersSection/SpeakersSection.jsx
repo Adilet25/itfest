@@ -1,5 +1,21 @@
 import React from "react";
 import showimg from "../../../assets/headliners.png";
+import show12 from "../../../assets/show/show1.2.png";
+import show11 from "../../../assets/show/show1.1.png";
+import show21 from "../../../assets/show/show2.1.png";
+import show22 from "../../../assets/show/show2.2.png";
+import show31 from "../../../assets/show/show3.1.png";
+import show32 from "../../../assets/show/show3.2.png";
+import show41 from "../../../assets/show/show4.1.png";
+import show42 from "../../../assets/show/show4.2.png";
+import show51 from "../../../assets/show/show5.1.png";
+import show52 from "../../../assets/show/show5.2.png";
+import show6 from "../../../assets/show/show6.png";
+import show71 from "../../../assets/show/show7.1.png";
+import show72 from "../../../assets/show/show7.2.png";
+import show81 from "../../../assets/show/show8.1.png";
+import show82 from "../../../assets/show/show8.2.png";
+
 import "./SpeakersSection.css";
 
 const SpeakersSection = () => {
@@ -50,34 +66,59 @@ const SpeakersSection = () => {
         <h2 className="showBlock_title">ШОУ-ПРОГРАММА</h2>
         <h3 className="showBlock_title2">Хэдлайнеры</h3>
         <img src={showimg} alt="error" className="showBlock_img" />
-        <div className="showBlock_info">
+        <div className="showBlock_info show1">
+          <img src={show11} alt="" className="showimg showimg11" />
           КОСПЛЕЙ <br /> ДЕФИЛЕ
+          <img src={show12} alt="" className="showimg showimg12" />
         </div>
-        <div className="showBlock_info">
+        <div className="showBlock_info show2">
+          <img src={show21} alt="" className="showimg showimg21" />
           ИНСТАЛЛЯЦИИ
           <br />И АРТ ОБЬЕКТЫ
+          <img src={show22} alt="" className="showimg showimg22" />
         </div>
-        <div className="showBlock_info">
+        <div className="showBlock_info show3">
+          <img src={show31} alt="" className="showimg showimg31" />
           КИНОТЕАТР ПОД
           <br />
           ОТКРЫТЫМ НЕБОМ
+          <img src={show32} alt="" className="showimg showimg32" />
         </div>
-        <div className="showBlock_info">ФОТОБУДКА</div>
-        <div className="showBlock_info">АНИМАТОРЫ</div>
-        <div className="showBlock_info infoEsp_block">
-          <div>ШОУ МЫЛЬНЫХ</div>
-          <span className="showBig_text">ПУЗЫРЕЙ</span>
+        <div className="showBlock_info show4">
+          <img src={show41} alt="" className="showimg showimg41" />
+          ФОТОБУДКА
+          <img src={show42} alt="" className="showimg showimg42" />
         </div>
-        <div className="showBlock_info infoEsp">
+        <div className="showBlock_info show5">
+          <img src={show51} alt="" className="showimg showimg51" />
+          АНИМАТОРЫ
+          <img src={show52} alt="" className="showimg showimg52" />
+        </div>
+        <div className="showBlock_info show6">
+          <img src={show6} alt="" className="showimg showimg6" />
+          <div className="infoEsp_block ">
+            <div>ШОУ МЫЛЬНЫХ</div>
+            <span className="showBig_text ">ПУЗЫРЕЙ</span>
+          </div>
+          <img src={show6} alt="" className="showimg showimg62" />
+        </div>
+        <div className="showBlock_info infoEsp show7">
+          <img src={show71} alt="" className="showimg showimg71" />
+
           <div>
             ВЫСТПУЛЕНИЕ
             <br />
             ТАНЦЕВАЛЬНЫХ
           </div>
-          <span className="showBig_text espG">ГРУПП</span>
+          <span className="showBig_text espG ">ГРУПП</span>
+          <img src={show72} alt="" className="showimg showimg72" />
         </div>
-        <div className="showBlock_info infoEsp_block">
-          <div>LASER</div> <span className="showBig_text">TAG</span>
+        <div className="showBlock_info  show8">
+          <img src={show81} alt="" className="showimg showimg81" />
+          <div className="infoEsp_block">
+            <div>LASER</div> <span className="showBig_text">TAG</span>
+          </div>
+          <img src={show82} alt="" className="showimg showimg82" />
         </div>
       </div>
     </div>
