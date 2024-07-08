@@ -142,7 +142,7 @@ const Navbar = () => {
               <div></div>
             )}
           </div>
-          <p className="navBlock_nav" onClick={() => navigate("/reg")}>
+          <p className="navBlock_nav" onClick={() => navigate("/choice")}>
             Регистрация
           </p>
           <div className="navDrawer">
@@ -353,7 +353,7 @@ const Navbar = () => {
                   <ListItemButton>
                     <div
                       className="navDrop_reg"
-                      onClick={() => navigate("/reg")}
+                      onClick={() => navigate("/choice")}
                     >
                       Регистрация
                     </div>

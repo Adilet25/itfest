@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
+import TourForm from "./components/auth/TourForm/TourForm";
+import RegisterForm from "./components/auth/RegisterFrom/RegisterForm";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -11,10 +13,30 @@ const MainRoutes = () => {
       id: 1,
     },
     {
-      link: "/reg",
+      link: "/choice",
       element: <RegisterPage />,
       id: 2,
     },
+    {
+      link: "/reg",
+      element: <RegisterForm />,
+      id: 3,
+    },
+    // {
+    //   link: "/reg",
+    //   element: <RegisterPage />,
+    //   id: 2,
+    // },
+    // {
+    //   link: "/reg",
+    //   element: <RegisterPage />,
+    //   id: 2,
+    // },
+    // {
+    //   link: "/reg",
+    //   element: <RegisterPage />,
+    //   id: 2,
+    // },
   ];
   return (
     <div>

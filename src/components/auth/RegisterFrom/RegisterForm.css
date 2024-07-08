@@ -1,24 +1,79 @@
+.regBlockbg {
+  background-image: url("/src/assets/regBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem 0;
+}
 .regForm_block {
-  color: black !important;
+  color: white !important;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   margin-top: 2rem;
+  padding: 4rem 0;
+  border-radius: 30px;
+  background-color: #e19df9;
+}
+.regForm_info {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formInputSelect {
+  background-color: white;
+  height: 2.5rem;
+  border: 0.5px solid #00000030;
+  padding-left: 0.5rem;
+  border-radius: 10px !important;
 }
 .formBlock {
   width: 90%;
+  margin: 0 auto;
+}
+.formBlockFile {
+  width: 90%;
+  margin: 0 auto;
+}
+.formBlock2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .formInp_label {
   font-weight: 600;
   margin-top: 1.4rem;
 }
-.formInput {
+.formInp_labels {
+  font-weight: 600;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
   width: 100%;
+  background-color: #ffffff50;
+  border-radius: 20px;
+  border: 2px dashed white;
+}
+#inpfile2 {
+  display: none;
+  background-color: aliceblue;
+}
+.label2 {
+  grid-column: 2/3;
+  grid-row: 6/8;
+}
+.formInput {
+  width: calc(100% - 0.5rem);
   height: 2.5rem;
   border: 0.5px solid #00000030;
   padding-left: 0.5rem;
   border-radius: 2px;
+  border-radius: 10px;
 }
 .formInput::-webkit-outer-spin-button,
 .formInput::-webkit-inner-spin-button {
@@ -79,4 +134,54 @@
   flex-direction: row;
   align-items: center;
   font-weight: 600;
+}
+.regCheck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+.regBbtn {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.regBtnfalse {
+  background-color: #d9d9d9;
+  color: black;
+}
+.regBtntrue {
+  background-color: #8007ca;
+  color: white;
+}
+.formTextarea {
+  resize: none;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  height: 10rem;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .regForm_block {
+    padding: 2rem 0;
+  }
+  .regForm_info {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .regCheck {
+    width: 90%;
+    justify-content: center;
+  }
+  .label2 {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .regBbtn {
+    width: 15rem;
+  }
 }

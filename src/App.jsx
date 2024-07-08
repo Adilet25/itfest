@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "./components/Layout/Layout";
 import MainRoutes from "./MainRoutes";
+import AuthContextProvider from "./context/AuthContextProvider";
 
 const App = () => {
   return (
     <div className="appBlock">
-      <Layout>
+      <AuthContextProvider>
         <MainRoutes />
-      </Layout>
+      </AuthContextProvider>
     </div>
   );
 };

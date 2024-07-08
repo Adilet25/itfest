@@ -7,18 +7,21 @@ import ExpoSection from "../components/Sections/ExpoSection/ExpoSection";
 import AboutSection from "../components/Sections/AboutSection/AboutSection";
 import WorkSection from "../components/Sections/WorkSection/WorkSection";
 import SpeakersSection from "../components/Sections/SpeakersSection/SpeakersSection";
+import Layout from "../components/Layout/Layout";
 
 const HomePage = () => {
   return (
     <div style={{ color: "white" }}>
-      <MainSection />
-      <SecondSection />
-      <PartnerSection />
-      <TournamentsSection />
-      <ExpoSection />
-      <AboutSection />
-      <WorkSection />
-      <SpeakersSection />
+      <Layout>
+        <MainSection />
+        <SecondSection />
+        <PartnerSection />
+        <TournamentsSection />
+        <ExpoSection />
+        <AboutSection />
+        <WorkSection />
+        <SpeakersSection />
+      </Layout>
     </div>
   );
 };
