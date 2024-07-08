@@ -118,6 +118,11 @@
   .firstBlock_logo {
     width: 55%;
   }
+  #el1 {
+    left: -20px;
+    bottom: -19vh;
+    width: 30%;
+  }
 }
 @media screen and (max-width: 450px) {
   .firstMain_text {
