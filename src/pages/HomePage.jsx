@@ -10,7 +10,7 @@ import SpeakersSection from "../components/Sections/SpeakersSection/SpeakersSect
 
 const HomePage = () => {
   return (
-    <div>
+    <div style={{ color: "white" }}>
       <MainSection />
       <SecondSection />
       <PartnerSection />

@@ -1,0 +1,82 @@
+.regForm_block {
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+}
+.formBlock {
+  width: 90%;
+}
+.formInp_label {
+  font-weight: 600;
+  margin-top: 1.4rem;
+}
+.formInput {
+  width: 100%;
+  height: 2.5rem;
+  border: 0.5px solid #00000030;
+  padding-left: 0.5rem;
+  border-radius: 2px;
+}
+.formInput::-webkit-outer-spin-button,
+.formInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.secondForm_block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 90%;
+  margin-top: 3rem;
+}
+.secondForm_block > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+.seconForm_btn {
+  cursor: pointer;
+  margin-right: 1rem;
+  color: #3378c9;
+  text-decoration: underline;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.seconForm_btn > img {
+  margin-left: 1rem;
+  width: 0.9rem;
+}
+#inpfile {
+  display: none;
+}
+/* .thirdForm_block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin: 3rem auto;
+} */
+.fourForm_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.fourForm1 > h3,
+.fourForm2 > h3 {
+  margin-bottom: 1rem;
+}
+.fourForm1_checks,
+.fourForm2_checks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
