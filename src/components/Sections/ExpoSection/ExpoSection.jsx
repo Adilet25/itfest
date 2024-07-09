@@ -5,8 +5,10 @@ import cassa from "../../../assets/expoimg/cassa.png";
 import sale from "../../../assets/expoimg/sale.svg";
 
 import "./ExpoSection.css";
+import { useNavigate } from "react-router-dom";
 
 const ExpoSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg6">
       <div className="container">
@@ -56,7 +58,9 @@ const ExpoSection = () => {
           </div>
         </div>
         <div className="expoBtn_block">
-          <button className="expoBtn">Регистрация</button>
+          <button className="expoBtn" onClick={() => navigate("/choice")}>
+            Регистрация
+          </button>
         </div>
       </div>
     </div>
