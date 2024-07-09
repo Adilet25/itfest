@@ -1,5 +1,7 @@
 import React from "react";
 import resimg from "../../../assets/resimg.svg";
+import kgpat from "../../../assets/kgpat.svg";
+
 import logo1 from "../../../assets/sponsorslogo/logo1.svg";
 import logo2 from "../../../assets/sponsorslogo/logo2.svg";
 import logo3 from "../../../assets/sponsorslogo/logo3.svg";
@@ -30,14 +32,14 @@ const SecondSection = () => {
           </p>
         </div>
         <div className="secondMain_second">
-          <img src={resimg} alt="error" id="secondBlock_img" />
+          <img src={kgpat} alt="error" id="secondBlock_img" />
           <div className="secondBlock_org">
             <p id="secondBlock_text">Организаторы</p>
             <div className="secondBlock_sponsors">
               <img src={logo4} alt="" />
               <img src={logo2} alt="" />
               <img src={logo6} alt="" />
-              <img src={logo8} alt="" />
+              <img src={resimg} alt="" />
               <img src={logo3} alt="" />
               <img src={logo1} alt="" />
               <img src={logo7} alt="" />
@@ -88,7 +90,7 @@ const SecondSection = () => {
             <img src={logo4} alt="" />
             <img src={logo2} alt="" />
             <img src={logo6} alt="" />
-            <img src={logo8} alt="" />
+            <img src={resimg} alt="" />
             <img src={logo3} alt="" />
             <img src={logo1} alt="" />
             <img src={logo7} alt="" />
