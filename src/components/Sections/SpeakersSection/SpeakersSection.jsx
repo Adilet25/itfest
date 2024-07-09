@@ -1,5 +1,10 @@
 import React from "react";
 import showimg from "../../../assets/headliners.png";
+import speak1 from "../../../assets/speakers/IMG_4339.jpg";
+import speak2 from "../../../assets/speakers/IMG_4335.jpg";
+import speak3 from "../../../assets/speakers/IMG_4337.jpg";
+import speak4 from "../../../assets/speakers/IMG_4336.jpg";
+import speak5 from "../../../assets/speakers/IMG_4338.jpg";
 import "./SpeakersSection.css";
 
 const SpeakersSection = () => {
@@ -10,7 +15,7 @@ const SpeakersSection = () => {
           <h2 className="speakBlock_title">СПИКЕРЫ</h2>
           <div className="speakList">
             <div className="speakBlock_card">
-              <div className="speakBlock_circle"></div>
+              <img src={speak1} alt="" className="speakBlock_circle" />
               <h3>Искенов Даурен</h3>
               <p>
                 Рарзаробтчик онлайн игр со стажем более 10лет.Главный
@@ -18,30 +23,27 @@ const SpeakersSection = () => {
               </p>
             </div>
             <div className="speakBlock_card">
-              <div className="speakBlock_circle"></div>
-              <h3>Соколовский Олег</h3>
+              <img src={speak2} alt="" className="speakBlock_circle" />
+              <h3>Айжан Алишерова</h3>
               <p>
-                Знаменитый блогер/маркетолог в европе и по совместительству
-                разработчик веб-приложний с опытом в крупных компаний мира.
+                Дуймаз, акселерационный менеджер команды Accelerate Prosperity
               </p>
             </div>
             <div className="speakBlock_card">
-              <div className="speakBlock_circle"></div>
-              <h3>Сон Тэхун</h3>
-              <p>
-                Мотиватор,Олимпийский чемпион по Тэквандо
-                (ITF,WTF),Прожект,Проект менеджер а так же Tим-Лид одного из
-                общеизвестных групп программистов.
-              </p>
+              <img src={speak3} alt="" className="speakBlock_circle" />
+              <h3>Динара Руслан</h3>
+              <p>основатель Codify</p>
+            </div>
+
+            <div className="speakBlock_card">
+              <img src={speak4} alt="" className="speakBlock_circle" />
+              <h3>Жылдыз Исабекова</h3>
+              <p>Страновой директор Accelerate Prosperity</p>
             </div>
             <div className="speakBlock_card">
-              <div className="speakBlock_circle"></div>
-              <h3>Ederson Dos Santos</h3>
-              <p>
-                Разработчик известных мобильных приложений таких как
-                YouTube,Instagram,Facebook и Whatsapp.Бывший сотрудник крупных
-                компаний а имеено:Google,Miccrosoft и Meta
-              </p>
+              <img src={speak5} alt="" className="speakBlock_circle" />
+              <h3>Эдиль Ажибаев</h3>
+              <p>Успешный питчинг, основатель PicVPic</p>
             </div>
           </div>
         </div>

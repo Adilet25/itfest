@@ -35,9 +35,13 @@
 .expoBlock_info > h3 {
   font-size: 2rem;
 }
-.expoBlock_info > h5 {
+.expoBlock_info > h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  text-decoration: line-through;
+}
+.expoBlock_info > h5 {
+  font-size: 1.3rem;
 }
 .infoBlock1 {
   border: 4px solid #d6d6d6;
@@ -66,8 +70,8 @@
 }
 .expoSale_img {
   position: absolute;
-  right: -8rem;
-  bottom: -12rem;
+  right: -4rem;
+  top: -1rem;
   width: 10rem;
 }
 @media screen and (max-width: 1370px) {
@@ -88,7 +92,6 @@
   }
   .expoBlock_info > h5 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -111,7 +114,6 @@
   }
   .expoBlock_info > h5 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -121,7 +123,7 @@
   .expoSale_img {
     right: -4rem;
     bottom: -7.3rem;
-    width: 6rem;
+    width: 10rem;
   }
   .expoBlock_info {
     margin-bottom: 0;
@@ -154,12 +156,10 @@
 }
 @media screen and (max-width: 570px) {
   .expoSale_img {
-    right: -3rem;
-    bottom: -7.3rem;
+    right: -2rem;
     width: 6rem;
   }
   .expoCassa {
-    width: 40%;
     left: -3rem;
     top: -5rem;
   }
@@ -172,7 +172,6 @@
 @media screen and (max-width: 425px) {
   .expoSale_img {
     right: -2rem;
-    bottom: -7.3rem;
     width: 6rem;
   }
   .expoCassa {
@@ -186,6 +185,6 @@
     line-height: 1.4rem;
   }
   .expoBlock_info > h3 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }

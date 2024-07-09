@@ -2,7 +2,7 @@ import React from "react";
 import expo1 from "../../../assets/expoimg/expo1.png";
 import expo2 from "../../../assets/expoimg/expo2.png";
 import cassa from "../../../assets/expoimg/cassa.png";
-import sale from "../../../assets/expoimg/sale.png";
+import sale from "../../../assets/expoimg/sale.svg";
 
 import "./ExpoSection.css";
 
@@ -16,7 +16,8 @@ const ExpoSection = () => {
             <div className="expoBlock_info infoBlock1">
               <img src={cassa} alt="error" className="expoCassa" />
               <h3>Стандарт</h3>
-              <h5>30 000 сом</h5>
+              <h5>21 000 сом</h5>
+              <h4>30 000 сом</h4>
               <ul>
                 <li>Выставочное место: 3x2 м</li>
                 <li>Электричество и освещение</li>
@@ -34,7 +35,9 @@ const ExpoSection = () => {
             <div className="expoBlock_info infoBlock2">
               <img src={cassa} alt="error" className="expoCassa" />
               <h3>Голд</h3>
-              <h5>50 000 сом</h5>
+              <h5>49 000 сом</h5>
+              <h4>70 000 сом</h4>
+
               <ul>
                 <li>Выставочное место: 6x3 м</li>
                 <li>Электричество и освещение</li>
@@ -49,6 +52,7 @@ const ExpoSection = () => {
                 <li>База контактных данных участников турнира</li>
                 <li>Гала ужин</li>
               </ul>
+              <img src={sale} alt="error" className="expoSale_img" />
             </div>
           </div>
         </div>

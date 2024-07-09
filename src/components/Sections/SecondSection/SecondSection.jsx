@@ -29,14 +29,16 @@ const SecondSection = () => {
         </div>
         <div className="secondMain_second">
           <img src={resimg} alt="error" id="secondBlock_img" />
-          <p id="secondBlock_text">Организаторы</p>
-          <div className="secondBlock_sponsors">
-            <img src={logo4} alt="" />
-            <img src={logo6} alt="" />
-            <img src={logo3} alt="" />
-            <img src={logo1} alt="" />
-            <img src={logo2} alt="" />
-            <img src={logo5} alt="" />
+          <div className="secondBlock_org">
+            <p id="secondBlock_text">Организаторы</p>
+            <div className="secondBlock_sponsors">
+              <img src={logo4} alt="" />
+              <img src={logo6} alt="" />
+              <img src={logo3} alt="" />
+              <img src={logo1} alt="" />
+              <img src={logo2} alt="" />
+              <img src={logo5} alt="" />
+            </div>
           </div>
         </div>
         <div className="secondMain_third">
@@ -75,6 +77,17 @@ const SecondSection = () => {
           <div>
             <p className="fs2">1500 </p>
             <p>кв. м экспозиций</p>{" "}
+          </div>
+        </div>
+        <div className="secondBlock_org2">
+          <p id="secondBlock_text">Организаторы</p>
+          <div className="secondBlock_sponsors2">
+            <img src={logo4} alt="" />
+            <img src={logo6} alt="" />
+            <img src={logo3} alt="" />
+            <img src={logo1} alt="" />
+            <img src={logo2} alt="" />
+            <img src={logo5} alt="" />
           </div>
         </div>
       </div>
