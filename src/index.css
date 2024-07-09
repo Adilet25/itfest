@@ -17,3 +17,17 @@
 .MuiList-root {
   padding: 0 !important;
 }
+.navDrop {
+  position: absolute;
+  text-align: end;
+  top: 2rem;
+  right: 2rem;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  background: linear-gradient(#3b206900, #41237784, #3b2069);
+  padding: 1rem;
+  border-radius: 6px;
+}
+.MuiDrawer-paperAnchorRight {
+  color: white !important;
+}

@@ -6,6 +6,8 @@ import logo3 from "../../../assets/sponsorslogo/logo3.svg";
 import logo4 from "../../../assets/sponsorslogo/logo4.svg";
 import logo5 from "../../../assets/sponsorslogo/logo5.svg";
 import logo6 from "../../../assets/sponsorslogo/logo6.svg";
+import logo7 from "../../../assets/sponsorslogo/logo7.svg";
+import logo8 from "../../../assets/sponsorslogo/logo8.svg";
 
 import "../SecondSection/SecondSection.css";
 
@@ -35,9 +37,9 @@ const SecondSection = () => {
               <img src={logo4} alt="" />
               <img src={logo6} alt="" />
               <img src={logo3} alt="" />
+              <img src={logo7} alt="" />
               <img src={logo1} alt="" />
               <img src={logo2} alt="" />
-              <img src={logo5} alt="" />
             </div>
           </div>
         </div>
@@ -83,11 +85,12 @@ const SecondSection = () => {
           <p id="secondBlock_text">Организаторы</p>
           <div className="secondBlock_sponsors2">
             <img src={logo4} alt="" />
+            <img src={logo2} alt="" />
             <img src={logo6} alt="" />
+            <img src={logo8} alt="" />
             <img src={logo3} alt="" />
             <img src={logo1} alt="" />
-            <img src={logo2} alt="" />
-            <img src={logo5} alt="" />
+            <img src={logo7} alt="" />
           </div>
         </div>
       </div>

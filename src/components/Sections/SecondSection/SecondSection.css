@@ -14,7 +14,7 @@
 }
 .secondMain_first {
   background: linear-gradient(
-    #3b2069,
+    #ffffff00,
     rgba(8, 212, 253, 0.2),
     rgba(8, 212, 253, 0.3),
     rgba(8, 212, 253, 0.2),
@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
 
-  padding: 0 2rem 0 1rem;
+  padding: 10rem 2rem 5rem 1rem;
 }
 .secondMain_first > p {
   margin-top: 3rem;
@@ -34,9 +34,7 @@
   letter-spacing: 1px;
   z-index: 2;
 }
-.secondMain_first > h2 {
-  z-index: 10 !important;
-}
+
 .secondMain_second {
   padding: 20rem 0 2rem 0;
   display: flex;
@@ -46,7 +44,7 @@
 }
 .secondMain_third {
   background: linear-gradient(
-    #3b2069,
+    #ffffff00,
     rgba(8, 212, 253, 0.2),
     rgba(8, 212, 253, 0.3),
     rgba(8, 212, 253, 0.2),
@@ -56,7 +54,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
+  padding: 10rem 0rem 5rem 2rem;
+
   text-align: center;
   font-weight: 700;
   font-size: 1rem;
@@ -70,7 +69,7 @@
 }
 .secondBlock_sponsors2 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   align-items: center;
   gap: 2rem;
 }
@@ -90,6 +89,8 @@
   flex-direction: column;
   text-align: center;
   grid-column: 1/4;
+  width: 90%;
+  margin: 0 auto;
 }
 .secondBlock_sponsors > img {
   margin: 1rem auto;
@@ -115,17 +116,19 @@
   .fs2 {
     font-size: 1.5rem;
   }
-
+  .secondBlock_sponsors2 > img {
+    width: 6rem;
+  }
   .secondMain_first > p {
     font-size: 0.9rem;
-  }
-  .secondMain_first > h2 {
-    z-index: 10 !important;
   }
 }
 @media screen and (max-width: 900px) {
   .secondMain_second {
-    padding-top: 10rem;
+    padding-top: 0rem;
+  }
+  .secondMain_first {
+    padding-top: 0rem;
   }
   .secondMain_third {
     font-size: 0.8rem;

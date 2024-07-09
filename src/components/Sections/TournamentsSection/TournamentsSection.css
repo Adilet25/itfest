@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   position: relative;
-  height: 50vmax;
+  height: 40vmax;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
