@@ -37,7 +37,6 @@ const ExpoSection = () => {
               <h3>Голд</h3>
               <h5>49 000 сом</h5>
               <h4>70 000 сом</h4>
-
               <ul>
                 <li>Выставочное место: 6x3 м</li>
                 <li>Электричество и освещение</li>
@@ -55,6 +54,9 @@ const ExpoSection = () => {
               <img src={sale} alt="error" className="expoSale_img" />
             </div>
           </div>
+        </div>
+        <div className="expoBtn_block">
+          <button className="expoBtn">Регистрация</button>
         </div>
       </div>
     </div>

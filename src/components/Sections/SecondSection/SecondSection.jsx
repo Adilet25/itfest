@@ -35,11 +35,12 @@ const SecondSection = () => {
             <p id="secondBlock_text">Организаторы</p>
             <div className="secondBlock_sponsors">
               <img src={logo4} alt="" />
-              <img src={logo6} alt="" />
-              <img src={logo3} alt="" />
-              <img src={logo7} alt="" />
-              <img src={logo1} alt="" />
               <img src={logo2} alt="" />
+              <img src={logo6} alt="" />
+              <img src={logo8} alt="" />
+              <img src={logo3} alt="" />
+              <img src={logo1} alt="" />
+              <img src={logo7} alt="" />
             </div>
           </div>
         </div>

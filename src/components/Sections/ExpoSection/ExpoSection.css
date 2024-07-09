@@ -7,7 +7,6 @@
 .expoBlock_main {
   display: flex;
   flex-direction: row;
-  padding-bottom: 2rem;
 }
 .expoBlock_main > div {
   width: 50%;
@@ -23,7 +22,7 @@
   height: 35rem;
   width: 86%;
   margin-top: 6rem;
-  margin-bottom: 15rem;
+  /* margin-bottom: 15rem;   */
   font-size: 1.2rem;
   padding: 2rem 0;
 }
@@ -73,6 +72,28 @@
   right: -4rem;
   top: -1rem;
   width: 10rem;
+}
+.expoBtn {
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #8007ca;
+  color: white;
+  transition: 0.4s;
+}
+.expoBtn:hover {
+  background-color: #aa37f1;
+  color: white;
+}
+.expoBtn_block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1370px) {
   .expoBlock_img {
@@ -135,6 +156,9 @@
     margin-top: 10rem;
 
     width: 100%;
+  }
+  .expoBtn {
+    margin: 5rem 0;
   }
   .expoBlock_img {
     width: 90%;

@@ -27,6 +27,9 @@
 
   padding: 10rem 2rem 5rem 1rem;
 }
+.secondMain_first > h2 {
+  z-index: 1;
+}
 .secondMain_first > p {
   margin-top: 3rem;
   font-size: 1rem;
@@ -98,6 +101,7 @@
 .secondBlock_sponsors2 > img {
   margin: 1rem auto;
 }
+
 @media screen and (max-width: 1024px) {
   .secondBlock_main {
     grid-template-columns: repeat(3, 30%);
@@ -170,6 +174,9 @@
     margin-bottom: 5rem;
     padding: 0 2rem 0 2rem;
   }
+  .secondBlock_sponsors > img {
+    width: 4.5rem;
+  }
   #secondBlock_text {
     font-size: 2rem;
     margin: 4rem 0;
@@ -202,12 +209,15 @@
   .secondBlock_sponsors {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     width: 90%;
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 5rem;
     padding: 0;
+  }
+  .secondBlock_sponsors > img {
+    width: 6rem;
   }
 }
 
@@ -224,6 +234,16 @@
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
+  }
+  .secondBlock_sponsors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 0;
   }
 }
 @media screen and (max-width: 375px) {
