@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/RegisterPage";
-import TourForm from "./components/auth/TourForm/TourForm";
 import RegisterForm from "./components/auth/RegisterFrom/RegisterForm";
 
 const MainRoutes = () => {
