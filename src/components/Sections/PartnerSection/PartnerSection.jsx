@@ -24,7 +24,7 @@ const PartnerSection = () => {
     <div className="bg4">
       <div className="partnerBlock_main">
         <div className="partnerBlock_mini partnerMini_0">
-          <h2>Генеральный Партнер</h2>
+          <h2>Генеральный спонсор</h2>
           <div className="parnterBlock_imgs0">
             <img src={logo8} alt="error" />
           </div>
