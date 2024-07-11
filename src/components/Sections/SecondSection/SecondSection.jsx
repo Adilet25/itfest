@@ -10,6 +10,7 @@ import logo5 from "../../../assets/sponsorslogo/logo5.svg";
 import logo6 from "../../../assets/sponsorslogo/logo6.svg";
 import logo7 from "../../../assets/sponsorslogo/logo7.svg";
 import logo8 from "../../../assets/sponsorslogo/logo8.svg";
+import kia from "../../../assets/sponsorslogo/kia.svg";
 
 import "../SecondSection/SecondSection.css";
 
@@ -40,7 +41,7 @@ const SecondSection = () => {
               <img src={logo2} alt="" />
               <img src={logo6} alt="" />
               <img src={resimg} alt="" />
-              <img src={logo3} alt="" />
+              <img src={kia} alt="" />
               <img src={logo1} alt="" />
               <img src={logo7} alt="" />
             </div>
@@ -91,7 +92,7 @@ const SecondSection = () => {
             <img src={logo2} alt="" />
             <img src={logo6} alt="" />
             <img src={resimg} alt="" />
-            <img src={logo3} alt="" />
+            <img src={kia} alt="" />
             <img src={logo1} alt="" />
             <img src={logo7} alt="" />
           </div>

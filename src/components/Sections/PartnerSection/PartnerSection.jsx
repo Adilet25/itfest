@@ -33,7 +33,7 @@ const PartnerSection = () => {
           <h2>Партнёры</h2>
           <div className="parnterBlock_imgs1">
             <Swiper
-              speed={10000}
+              speed={1500}
               spaceBetween={30}
               centeredSlides={true}
               autoplay={{
@@ -45,7 +45,7 @@ const PartnerSection = () => {
               freeMode={true}
               breakpoints={{
                 640: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 20,
                 },
                 768: {

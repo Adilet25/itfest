@@ -64,11 +64,13 @@
 }
 .expoCassa {
   position: absolute;
+  right: auto;
   left: -5rem;
   top: -6rem;
 }
 .expoSale_img {
   position: absolute;
+  left: auto;
   right: -4rem;
   top: -1rem;
   width: 10rem;

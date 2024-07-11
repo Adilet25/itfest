@@ -15,14 +15,6 @@ const SpeakersSection = () => {
           <h2 className="speakBlock_title">СПИКЕРЫ</h2>
           <div className="speakList">
             <div className="speakBlock_card">
-              <img src={speak1} alt="" className="speakBlock_circle" />
-              <h3>Искенов Даурен</h3>
-              <p>
-                Рарзаробтчик онлайн игр со стажем более 10лет.Главный
-                разработчик компании Ubisoft.
-              </p>
-            </div>
-            <div className="speakBlock_card">
               <img src={speak2} alt="" className="speakBlock_circle" />
               <h3>Айжан Алишерова</h3>
               <p>
