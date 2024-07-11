@@ -16,10 +16,8 @@ const SpeakersSection = () => {
           <div className="speakList">
             <div className="speakBlock_card">
               <img src={speak2} alt="" className="speakBlock_circle" />
-              <h3>Айжан Алишерова</h3>
-              <p>
-                Дуймаз, акселерационный менеджер команды Accelerate Prosperity
-              </p>
+              <h3>Айжан Алишерова-Дуймаз</h3>
+              <p>акселерационный менеджер команды Accelerate Prosperity</p>
             </div>
             <div className="speakBlock_card">
               <img src={speak3} alt="" className="speakBlock_circle" />
@@ -34,8 +32,8 @@ const SpeakersSection = () => {
             </div>
             <div className="speakBlock_card">
               <img src={speak5} alt="" className="speakBlock_circle" />
-              <h3>Эдиль Ажибаев</h3>
-              <p>Успешный питчинг, основатель PicVPic</p>
+              <h3>Пархад Базаков</h3>
+              <p>Применение ИИ в стартапах ,senior data scientist</p>
             </div>
           </div>
         </div>

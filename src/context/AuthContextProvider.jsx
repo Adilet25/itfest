@@ -35,12 +35,20 @@ const AuthContextProvider = ({ children }) => {
       console.error("Error:", err);
     }
   }
-
+  async function sendFile(formData) {
+    const response = await fetch(`${API}/register_company/it_expo/`, {
+      method: "POST",
+      body: formData,
+    });
+    const result = await response.json();
+    console.log(result);
+  }
   return (
     <authContext.Provider
       value={{
         role,
         errorr,
+        sendFile,
         setRole,
         register,
       }}

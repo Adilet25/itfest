@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import downloadicon from "../../../assets/downloadicon.svg";
 import Checkbox from "@mui/material/Checkbox";
 import "./RegisterForm.css";
@@ -20,7 +20,7 @@ const RegisterForm = () => {
   const [checked, setChecked] = useState(false);
   const [inpBtnSt, setInpBtnSt] = useState(false);
 
-  const { role, register, errorr } = useAuth();
+  const { role, register, sendFile } = useAuth();
 
   const [Surname, setSurname] = useState("");
   const [Name, setName] = useState("");
@@ -42,6 +42,9 @@ const RegisterForm = () => {
   const [reg_logo, setreglogo] = useState("");
   const [reg_check, setregcheck] = useState("");
 
+  const filePicker = useRef(null);
+  const filePickerlogo = useRef(null);
+
   function sendData(fork) {
     if (fork == "register_user/speaker/") {
       if (
@@ -55,7 +58,7 @@ const RegisterForm = () => {
         !PhoneNumber ||
         !speech_theme
       ) {
-        alert("You have empty inputs!1");
+        alert("Заполните все поля!1");
         return;
       } else {
         setInpBtnSt(true);
@@ -86,7 +89,7 @@ const RegisterForm = () => {
         !PhoneNumber ||
         !speech_theme
       ) {
-        alert("You have empty inputs!1");
+        alert("Заполните все поля!1");
         return;
       } else {
         setInpBtnSt(true);
@@ -118,7 +121,7 @@ const RegisterForm = () => {
         !work ||
         !format
       ) {
-        alert("You have empty inputs!2");
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -135,7 +138,13 @@ const RegisterForm = () => {
         Game: work,
         ParticipateFormat: format,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
     if (fork == "register_user/design/") {
       if (
@@ -149,7 +158,7 @@ const RegisterForm = () => {
         !PhoneNumber ||
         !work
       ) {
-        alert("You have empty inputs!2");
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -165,7 +174,13 @@ const RegisterForm = () => {
         PhoneNumber: PhoneNumber,
         course: work,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
     if (fork == "register_user/hackathon/") {
       if (
@@ -179,7 +194,7 @@ const RegisterForm = () => {
         !PhoneNumber ||
         !work
       ) {
-        alert("You have empty inputs!2");
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -195,7 +210,13 @@ const RegisterForm = () => {
         PhoneNumber: PhoneNumber,
         course: work,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
     if (
       fork == "register_user/mobilography/" ||
@@ -212,7 +233,7 @@ const RegisterForm = () => {
         !DateOfBirth ||
         !PhoneNumber
       ) {
-        alert("You have empty inputs!2");
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -227,7 +248,13 @@ const RegisterForm = () => {
         DateOfBirth: DateOfBirth,
         PhoneNumber: PhoneNumber,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
     if (fork == "register_company/food_zone/") {
       if (
@@ -246,7 +273,7 @@ const RegisterForm = () => {
         // !reg_logo ||
         // !reg_check
       ) {
-        alert("You have empty inputs!2");
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -262,13 +289,18 @@ const RegisterForm = () => {
         Web_Site: siteurl,
         Email: Email,
         Country: Country,
-        Phone_number: "u menya takogo net",
+        Phone_number: PhoneNumber,
         Company_Product: compProd,
-        Logo: "https://www.google.com/imgres?q=error%20codes&imgurl=https%3A%2F%2Frestfulapi.net%2Fwp-content%2Fuploads%2FHTTP-Error-Codes.jpg&imgrefurl=https%3A%2F%2Frestfulapi.net%2Fhttp-status-codes%2F&docid=zQ-uzEIUYRVBwM&tbnid=nnqRmDdJNHwN1M&vet=12ahUKEwjly9nk85yHAxV8AxAIHWibDJ0QM3oECBwQAA..i&w=1200&h=628&hcb=2&ved=2ahUKEwjly9nk85yHAxV8AxAIHWibDJ0QM3oECBwQAA",
-        Register_check:
-          "https://www.google.com/imgres?q=error%20codes&imgurl=https%3A%2F%2Frestfulapi.net%2Fwp-content%2Fuploads%2FHTTP-Error-Codes.jpg&imgrefurl=https%3A%2F%2Frestfulapi.net%2Fhttp-status-codes%2F&docid=zQ-uzEIUYRVBwM&tbnid=nnqRmDdJNHwN1M&vet=12ahUKEwjly9nk85yHAxV8AxAIHWibDJ0QM3oECBwQAA..i&w=1200&h=628&hcb=2&ved=2ahUKEwjly9nk85yHAxV8AxAIHWibDJ0QM3oECBwQAA",
+        Logo: reg_logo,
+        Register_check: reg_check,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
     if (fork == "register_company/it_expo/") {
       if (
@@ -283,12 +315,13 @@ const RegisterForm = () => {
         !Email ||
         !Country ||
         !PhoneNumber ||
-        !compProd
-        // ||
-        // !reg_logo ||
-        // !reg_check
+        !compProd ||
+        !reg_logo ||
+        !reg_check ||
+        !theme2
       ) {
-        alert("You have empty inputs!2");
+        console.log(Country, PhoneNumber, compProd, reg_logo, reg_check);
+        alert("Заполните все поля!");
         return;
       } else {
         setInpBtnSt(!inpBtnSt);
@@ -304,17 +337,21 @@ const RegisterForm = () => {
         Web_Site: siteurl,
         Email: Email,
         Country: Country,
-        Phone_number: Country,
+        Phone_number: PhoneNumber,
         Company_Product: compProd,
         Logo: reg_logo,
         Register_check: reg_check,
         Theme: theme2,
       };
-      register(formdata, fork);
+      emailVal();
+      if (message.length < 1) {
+        console.log(reg_logo);
+        register(formdata, fork);
+        if (checked && inpBtnSt) {
+          navigate("/");
+        }
+      }
     }
-    // if (checked && inpBtnSt && !errorr) {
-    //   navigate("/");
-    // }
   }
   function formatphone(value) {
     if (!value) return value;
@@ -358,6 +395,20 @@ const RegisterForm = () => {
   const emailHandler = (e) => {
     setEmail(e.target.value);
   };
+  const handlefile = (e) => {
+    setregcheck(e.target.files[0]);
+    console.log(reg_check);
+  };
+  const handlelogo = (e) => {
+    setreglogo(e.target.files[0]);
+    console.log(reg_logo);
+  };
+  const handlePicklogo = () => {
+    filePickerlogo.current.click();
+  };
+  const handlePick = () => {
+    filePicker.current.click();
+  };
   return (
     <div className="regBlockbg">
       <div className="container">
@@ -398,7 +449,6 @@ const RegisterForm = () => {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock">
                   <p className="formInp_label">
                     Полное юридическое наименование организации
@@ -409,7 +459,6 @@ const RegisterForm = () => {
                     onChange={(e) => setSurname(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock">
                   <p className="formInp_label">Юридический адрес</p>
                   <input
@@ -470,6 +519,26 @@ const RegisterForm = () => {
                   />
                 </div>
                 <div className="formBlock">
+                  <p className="formInp_label">Телефон</p>
+                  <form
+                    action=""
+                    method="post"
+                    id="cusCreate"
+                    autocomplete="off"
+                  >
+                    <input
+                      type="tel"
+                      name="telphone"
+                      placeholder="996 999777666"
+                      title="Пример:996 999777666"
+                      className="formInput"
+                      required
+                      onChange={(e) => phoneHandle(e)}
+                      value={PhoneNumber}
+                    />
+                  </form>
+                </div>{" "}
+                <div className="formBlock">
                   <p className="formInp_label">Страна</p>
                   <input
                     className="formInput"
@@ -477,7 +546,6 @@ const RegisterForm = () => {
                     onChange={(e) => setCountry(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock">
                   <div>
                     <p className="formInp_label">Тематический раздел</p>
@@ -498,7 +566,7 @@ const RegisterForm = () => {
                 <div className="formBlock label2">
                   <div>
                     <p className="formInp_label">
-                      Опишите товары или услуги уомпании
+                      Опишите товары или услуги компании
                     </p>
                     <textarea
                       className="formTextarea"
@@ -508,27 +576,32 @@ const RegisterForm = () => {
                 </div>
                 <div className="formBlockFile">
                   <p className="formInp_label">Логотип компании</p>
+                  <button className="formInp_labels" onClick={handlePicklogo}>
+                    Загрузите файл
+                  </button>
                   <input
                     type="file"
                     placeholder="Загрузить"
                     className="formInput2"
                     id="inpfile2"
+                    onChange={handlelogo}
+                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
+                    ref={filePickerlogo}
                   />
-                  <label for="inpfile2" class="formInp_labels">
-                    Загрузите файл
-                  </label>
                 </div>
                 <div className="formBlockFile">
                   <p className="formInp_label">Свидетельство регистрации</p>
+                  <button className="formInp_labels" onClick={handlePick}>
+                    Загрузите файл
+                  </button>
                   <input
                     type="file"
-                    placeholder="Загрузить"
-                    className="formInput2"
+                    placeholder="Загрузите файл"
                     id="inpfile2"
+                    onChange={handlefile}
+                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
+                    ref={filePicker}
                   />
-                  <label for="inpfile2" class="formInp_labels">
-                    Загрузите файл
-                  </label>
                 </div>
               </div>
               <div className="regCheck">
@@ -539,6 +612,7 @@ const RegisterForm = () => {
               </div>
               <button
                 className={`regBbtn regBtn${checked}`}
+                disabled={!checked}
                 onClick={() => sendData("register_company/it_expo/")}
               >
                 Зарегистрироваться
@@ -669,9 +743,6 @@ const RegisterForm = () => {
                               </MenuItem>
                               <MenuItem value={"PUBG"}>PUBG</MenuItem>
                               <MenuItem value={"Dota 2"}>Dota 2</MenuItem>
-                              <MenuItem value={"Play Station"}>
-                                Play Station
-                              </MenuItem>
                             </Select>
                           </FormControl>
                         </div>
@@ -766,10 +837,8 @@ const RegisterForm = () => {
               </div>
               <button
                 className={`regBbtn regBtn${checked}`}
-                onClick={() => {
-                  sendData(`register_user/${theme}/`), emailVal();
-                }}
-                type="submit"
+                onClick={() => sendData(`register_user/${theme}/`)}
+                disabled={!checked}
               >
                 Зарегистрироваться
               </button>
@@ -878,6 +947,7 @@ const RegisterForm = () => {
               </div>
               <button
                 className={`regBbtn regBtn${checked}`}
+                disabled={!checked}
                 onClick={() => sendData("register_user/speaker/")}
               >
                 Зарегистрироваться
@@ -894,7 +964,6 @@ const RegisterForm = () => {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock">
                   <p className="formInp_label">
                     Полное юридическое наименование организации
@@ -905,7 +974,6 @@ const RegisterForm = () => {
                     onChange={(e) => setSurname(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock">
                   <p className="formInp_label">Юридический адрес</p>
                   <input
@@ -966,6 +1034,26 @@ const RegisterForm = () => {
                   />
                 </div>
                 <div className="formBlock">
+                  <p className="formInp_label">Телефон</p>
+                  <form
+                    action=""
+                    method="post"
+                    id="cusCreate"
+                    autocomplete="off"
+                  >
+                    <input
+                      type="tel"
+                      name="telphone"
+                      placeholder="996 999777666"
+                      title="Пример:996 999777666"
+                      className="formInput"
+                      required
+                      onChange={(e) => phoneHandle(e)}
+                      value={PhoneNumber}
+                    />
+                  </form>
+                </div>{" "}
+                <div className="formBlock">
                   <p className="formInp_label">Страна</p>
                   <input
                     className="formInput"
@@ -973,7 +1061,6 @@ const RegisterForm = () => {
                     onChange={(e) => setCountry(e.target.value)}
                   />
                 </div>
-
                 <div className="formBlock label2">
                   <div>
                     <p className="formInp_label">
@@ -987,29 +1074,32 @@ const RegisterForm = () => {
                 </div>
                 <div className="formBlockFile">
                   <p className="formInp_label">Логотип компании</p>
+                  <button className="formInp_labels" onClick={handlePick}>
+                    Загрузите файл
+                  </button>
                   <input
                     type="file"
                     placeholder="Загрузить"
                     className="formInput2"
                     id="inpfile2"
-                    onChange={(e) => setreglogo(e.target.value)}
+                    onChange={handlelogo}
+                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
+                    ref={filePicker}
                   />
-                  <label for="inpfile2" class="formInp_labels">
-                    Загрузите файл
-                  </label>
                 </div>
                 <div className="formBlockFile">
                   <p className="formInp_label">Свидетельство регистрации</p>
+                  <button className="formInp_labels" onClick={handlePick}>
+                    Загрузите файл
+                  </button>
                   <input
                     type="file"
-                    placeholder="Загрузить"
-                    className="formInput2"
-                    onChange={(e) => setregcheck(e.target.value)}
+                    placeholder="Загрузите файл"
                     id="inpfile2"
+                    onChange={handlefile}
+                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
+                    ref={filePicker}
                   />
-                  <label for="inpfile2" class="formInp_labels">
-                    Загрузите файл
-                  </label>
                 </div>
               </div>
               <div className="regCheck">
@@ -1020,6 +1110,7 @@ const RegisterForm = () => {
               </div>
               <button
                 className={`regBbtn regBtn${checked}`}
+                disabled={!checked}
                 onClick={() => sendData("register_company/food_zone/")}
               >
                 Зарегистрироваться
@@ -1130,6 +1221,7 @@ const RegisterForm = () => {
               </div>
               <button
                 className={`regBbtn regBtn${checked}`}
+                disabled={!checked}
                 onClick={() => sendData("register_user/masterclass/")}
               >
                 Зарегистрироваться

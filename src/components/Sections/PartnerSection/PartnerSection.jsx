@@ -72,13 +72,13 @@ const PartnerSection = () => {
                 <img src={logo12} alt="error" className="swiperImgs" />
               </SwiperSlide>{" "}
               <SwiperSlide>
+                <img src={logo5} alt="error" className="swiperImgs" />
+              </SwiperSlide>{" "}
+              <SwiperSlide>
                 <img src={logo13} alt="error" className="swiperImgs" />
               </SwiperSlide>{" "}
               <SwiperSlide>
                 <img src={logo3} alt="error" className="swiperImgs" />
-              </SwiperSlide>{" "}
-              <SwiperSlide>
-                <img src={logo6} alt="error" className="swiperImgs" />
               </SwiperSlide>{" "}
               <SwiperSlide>
                 <img src={logo7} alt="error" className="swiperImgs imgneko" />
@@ -87,12 +87,6 @@ const PartnerSection = () => {
           </div>
 
           {/* </div> */}
-        </div>
-        <div className="partnerBlock_mini partnerMini_2">
-          <h2>Медиа партнёры</h2>
-          <div className="parnterBlock_imgs">
-            <img src={logo5} alt="error" />
-          </div>
         </div>
         <div className="partnerBlock_mini partnerMini_3">
           <h2>Horeca партнёры</h2>
