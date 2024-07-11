@@ -135,7 +135,7 @@ const RegisterForm = () => {
         Game: work,
         ParticipateFormat: format,
       };
-      console.log(formdata, fork);
+      register(formdata, fork);
     }
     if (fork == "register_user/design/") {
       if (
@@ -312,9 +312,9 @@ const RegisterForm = () => {
       };
       register(formdata, fork);
     }
-    if (checked && inpBtnSt && !errorr) {
-      navigate("/");
-    }
+    // if (checked && inpBtnSt && !errorr) {
+    //   navigate("/");
+    // }
   }
   function formatphone(value) {
     if (!value) return value;
