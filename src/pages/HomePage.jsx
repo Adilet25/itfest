@@ -1,6 +1,6 @@
 import React, { lazy } from "react";
-// import MainSection from "";
-// import SecondSection from "../components/Sections/SecondSection/SecondSection";
+import MainSection from "../components/Sections/MainSection/MainSection";
+import SecondSection from "../components/Sections/SecondSection/SecondSection";
 // import PartnerSection from "../components/Sections/PartnerSection/PartnerSection";
 // import TournamentsSection from "../components/Sections/TournamentsSection/TournamentsSection";
 // import ExpoSection from "../components/Sections/ExpoSection/ExpoSection";
@@ -9,12 +9,6 @@ import React, { lazy } from "react";
 // import SpeakersSection from "../components/Sections/SpeakersSection/SpeakersSection";
 import Layout from "../components/Layout/Layout";
 
-const MainSection = lazy(() =>
-  import("../components/Sections/MainSection/MainSection")
-);
-const SecondSection = lazy(() =>
-  import("../components/Sections/SecondSection/SecondSection")
-);
 const PartnerSection = lazy(() =>
   import("../components/Sections/PartnerSection/PartnerSection")
 );
