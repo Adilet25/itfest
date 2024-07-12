@@ -1,11 +1,24 @@
 import React from "react";
 import showimg from "../../../assets/headliners.png";
-import speak1 from "../../../assets/speakers/IMG_4339.jpg";
 import speak2 from "../../../assets/speakers/IMG_4335.jpg";
 import speak3 from "../../../assets/speakers/IMG_4337.jpg";
 import speak4 from "../../../assets/speakers/IMG_4336.jpg";
 import speak5 from "../../../assets/speakers/IMG_4338.jpg";
+
+import animators from "../../../assets/showprogramm/animators.png";
+import artobjects from "../../../assets/showprogramm/artobjects.png";
+import cinema from "../../../assets/showprogramm/cinema.png";
+import cosplay from "../../../assets/showprogramm/cosplay.png";
+import laser from "../../../assets/showprogramm/laser.png";
+import photobudka from "../../../assets/showprogramm/photobudka.png";
+import puzir from "../../../assets/showprogramm/puzir.png";
+import dabce from "../../../assets/showprogramm/dabce.png";
+
 import "./SpeakersSection.css";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 
 const SpeakersSection = () => {
   return (
@@ -17,18 +30,28 @@ const SpeakersSection = () => {
             <div className="speakBlock_card">
               <img src={speak2} alt="" className="speakBlock_circle" />
               <h3>Айжан Алишерова-Дуймаз</h3>
-              <p>акселерационный менеджер команды Accelerate Prosperity</p>
+              <p>
+                Прошла обучение в школе трекеров в июле этого года и теперь
+                является бизнес-трекером Accelerate Prosperity.
+              </p>
             </div>
             <div className="speakBlock_card">
               <img src={speak3} alt="" className="speakBlock_circle" />
               <h3>Динара Руслан</h3>
-              <p>основатель Codify</p>
+              <p>
+                Генеральный директор CODIFY, советник премьер-министра КР
+                (инновации, ИТ, развитие, автоматизация, ИТ-стартапы)
+              </p>
             </div>
 
             <div className="speakBlock_card">
               <img src={speak4} alt="" className="speakBlock_circle" />
               <h3>Жылдыз Исабекова</h3>
-              <p>Страновой директор Accelerate Prosperity</p>
+              <p>
+                Страновой директор Accelerate Prosperity.Окончила факультет
+                востоковедения и международных отношений в БГУ. Прошла
+                стажировку в Тяньцзиньском университете в Китае
+              </p>
             </div>
             <div className="speakBlock_card">
               <img src={speak5} alt="" className="speakBlock_circle" />
@@ -42,36 +65,58 @@ const SpeakersSection = () => {
         <h2 className="showBlock_title">ШОУ-ПРОГРАММА</h2>
         <h3 className="showBlock_title2">Хэдлайнеры</h3>
         <img src={showimg} alt="error" className="showBlock_img" />
-        <div className="showBlock_info">
-          КОСПЛЕЙ <br /> ДЕФИЛЕ
-        </div>
-        <div className="showBlock_info">
-          ИНСТАЛЛЯЦИИ
-          <br />И АРТ ОБЬЕКТЫ
-        </div>
-        <div className="showBlock_info">
-          КИНОТЕАТР ПОД
-          <br />
-          ОТКРЫТЫМ НЕБОМ
-        </div>
-        <div className="showBlock_info">ФОТОБУДКА</div>
-        <div className="showBlock_info">АНИМАТОРЫ</div>
-        <div className="showBlock_info infoEsp_block">
-          <div>ШОУ МЫЛЬНЫХ</div>
-          <span className="showBig_text">ПУЗЫРЕЙ</span>
-        </div>
-        <div className="showBlock_info infoEsp">
-          <div>
-            ВЫСТПУЛЕНИЕ
-            <br />
-            ТАНЦЕВАЛЬНЫХ
-          </div>
-          <span className="showBig_text espG">ГРУПП</span>
-        </div>
-        <div className="showBlock_info infoEsp_block">
-          <div>LASER</div> <span className="showBig_text">TAG</span>
+        <div className="showBlock_img">
+          <img src={cosplay} alt="" />
+          <img src={animators} alt="" />
+          <img src={cinema} alt="" />
+          <img src={photobudka} alt="" />
+          <img src={puzir} alt="" />
+          <img src={artobjects} alt="" />
+          <img src={dabce} alt="" />
+          <img src={laser} alt="" />
         </div>
       </div>
+      {/* <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={2}
+        navigation={true}
+        coverflowEffect={{
+          rotate: -50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[EffectCoverflow, Navigation]}
+        className="showSwip"
+      >
+        <SwiperSlide>
+          <img src={cosplay} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={cinema} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={photobudka} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={animators} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={puzir} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={artobjects} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={dabce} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={laser} alt="" />
+        </SwiperSlide>
+      </Swiper> */}
     </div>
   );
 };

@@ -99,6 +99,10 @@
   align-items: center;
   justify-content: center;
 }
+.expo_title {
+  font-size: 4rem;
+  text-align: center;
+}
 @media screen and (max-width: 1370px) {
   .expoBlock_img {
     width: 90%;

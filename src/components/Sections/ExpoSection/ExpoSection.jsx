@@ -12,6 +12,7 @@ const ExpoSection = () => {
   return (
     <div className="bg6">
       <div className="container">
+        <h3 className="expo_title">IT EXPO</h3>
         <div className="expoBlock_main">
           <div>
             <img src={expo1} alt="error" className="expoBlock_img" />
