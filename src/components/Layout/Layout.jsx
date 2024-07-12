@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 
@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      {children}
+      <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
       {/* <Footer /> */}
     </div>
   );
