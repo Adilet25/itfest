@@ -10,6 +10,9 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import not404 from "../../../assets/not404.svg";
 
+import Alert from "@mui/material/Alert";
+import CheckIcon from "@mui/icons-material/Check";
+
 const RegisterForm = () => {
   const navigate = useNavigate();
   const [theme, setTheme] = useState("");
@@ -20,7 +23,7 @@ const RegisterForm = () => {
   const [checked, setChecked] = useState(false);
   const [inpBtnSt, setInpBtnSt] = useState(false);
 
-  const { role, register, sendFile } = useAuth();
+  const { role, register, setRegSt, regSt } = useAuth();
 
   const [Surname, setSurname] = useState("");
   const [Name, setName] = useState("");
@@ -251,9 +254,6 @@ const RegisterForm = () => {
       emailVal();
       if (message.length < 1) {
         register(formdata, fork);
-        if (checked && inpBtnSt) {
-          navigate("/");
-        }
       }
     }
     if (fork == "register_company/food_zone/") {
@@ -437,6 +437,19 @@ const RegisterForm = () => {
           </Link>
         </Breadcrumbs>
         <div className="regForm_block">
+          {regSt ? (
+            <div className="regFormSucces">
+              <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
+                Регистрация прошла успешно!
+              </Alert>
+            </div>
+          ) : (
+            <div className="regFormSucces">
+              <Alert severity="error">
+                Упс, проблема! Попробуйте снова позже или перепроверьте данные!{" "}
+              </Alert>
+            </div>
+          )}
           <h2>Регистрация</h2>
           {role == "EXPO" ? (
             <>
@@ -842,6 +855,17 @@ const RegisterForm = () => {
               >
                 Зарегистрироваться
               </button>
+              {regSt ? (
+                <button
+                  className={`regBbtn regBtntrue`}
+                  onClick={() => navigate("/")}
+                  disabled={!checked}
+                >
+                  На главную
+                </button>
+              ) : (
+                <></>
+              )}
             </>
           ) : role == "Speaker" ? (
             <>

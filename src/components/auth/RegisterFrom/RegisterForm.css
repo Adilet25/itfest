@@ -194,6 +194,10 @@
   width: 20rem;
   margin-bottom: 2rem;
 }
+.regFormSucces {
+  position: fixed;
+  top: 2rem;
+}
 @media screen and (max-width: 768px) {
   .regForm_block {
     padding: 2rem 0;

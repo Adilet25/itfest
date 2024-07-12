@@ -10,6 +10,7 @@ const API = "https://backitfest.pythonanywhere.com";
 const AuthContextProvider = ({ children }) => {
   const [role, setRole] = useState(null);
   const [errorr, setErrorr] = useState();
+  const [regSt, setRegSt] = useState(false);
 
   const navigate = useNavigate();
 
@@ -25,6 +26,7 @@ const AuthContextProvider = ({ children }) => {
 
       if (response.ok) {
         console.log(formData);
+        setRegSt(true);
       } else {
         const errorData = await response.json();
         console.log(errorData);
@@ -35,6 +37,7 @@ const AuthContextProvider = ({ children }) => {
       console.error("Error:", err);
     }
   }
+
   async function sendFile(formData) {
     const response = await fetch(`${API}/register_company/it_expo/`, {
       method: "POST",
@@ -48,6 +51,8 @@ const AuthContextProvider = ({ children }) => {
       value={{
         role,
         errorr,
+        regSt,
+        setRegSt,
         sendFile,
         setRole,
         register,
