@@ -2,6 +2,7 @@
   background-image: url("/src/assets/regBg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   height: 100%;
   color: white;
   padding: 3rem 0;
@@ -166,6 +167,33 @@
   height: 10rem;
   border-radius: 20px;
 }
+
+.notFound_block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+.notFound_btn {
+  margin-top: 2rem;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px white solid;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.notFound_btn:hover {
+  background-color: #8007ca;
+  border: 1px transparent solid;
+}
+.notFound_img {
+  width: 20rem;
+  margin-bottom: 2rem;
+}
 @media screen and (max-width: 768px) {
   .regForm_block {
     padding: 2rem 0;
@@ -184,6 +212,9 @@
 }
 @media screen and (max-width: 425px) {
   .regBbtn {
+    width: 15rem;
+  }
+  .notFound_img {
     width: 15rem;
   }
 }

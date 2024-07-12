@@ -35,37 +35,27 @@ const TournamentsSection = () => {
         </div>
         <div className="tourFork_blockParent">
           <div className="tourFork_block">
-            <div className="tourForkimg0">
-              <img src={tour0} alt="error" className="tourForkimg01" />
-              <div className="imghovBlock imghovBlock3">
-                <p className="imghovTitle">Кибер безопасность</p>
-                <div className="imghovInfo">
-                  <div>
-                    <p>Участники: </p>
-                    <p className="imghovTextBold">100 человек.</p>
-                  </div>
-                  <div>
-                    <p>Призовой фонд:</p>
-                    <p className="imghovTextBold">300,000 сом</p>
-                  </div>
-                  <p className="imghovBtn" onClick={() => navigate("/choice")}>
-                    Регистрация
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="tourForkimg1">
               <img src={tour1} alt="error" className="tourForkimg11" />
               <div className="imghovBlock imghovBlock2 ">
                 <p className="imghovTitle">Киберспорт</p>
+
                 <div className="imghovInfo">
                   <div>
-                    <p>Участники: </p>
-                    <p className="imghovTextBold">100 человек.</p>
+                    <div>
+                      <p>Участники: </p>
+                      <p>640 человек.</p>
+                    </div>
+                    <p>Игровые дисциплины: </p>
+                    <p className="">
+                      {" "}
+                      Counter-Strike 2 <br /> Dota 2 <br />
+                      PUBG
+                    </p>
                   </div>
                   <div>
                     <p>Призовой фонд:</p>
-                    <p className="imghovTextBold">300,000 сом</p>
+                    <p className="imghovTextBold">1,500,000 сом</p>
                   </div>
                   <p className="imghovBtn" onClick={() => navigate("/choice")}>
                     Регистрация
@@ -104,7 +94,7 @@ const TournamentsSection = () => {
                 <div className="imghovInfo">
                   <div>
                     <p>Участники: </p>
-                    <p className="imghovTextBold">100 человек.</p>
+                    <p className="imghovTextBold">50 человек.</p>
                   </div>
                   <div>
                     <p>Призовой фонд:</p>
@@ -123,11 +113,11 @@ const TournamentsSection = () => {
                 <div className="imghovInfo">
                   <div>
                     <p>Участники: </p>
-                    <p className="imghovTextBold">100 человек.</p>
+                    <p className="imghovTextBold">600 человек.</p>
                   </div>
                   <div>
                     <p>Призовой фонд:</p>
-                    <p className="imghovTextBold">300,000 сом</p>
+                    <p className="imghovTextBold">500,000 сом</p>
                   </div>
                   <p className="imghovBtn" onClick={() => navigate("/choice")}>
                     Регистрация
@@ -161,11 +151,30 @@ const TournamentsSection = () => {
                 <div className="imghovInfo">
                   <div>
                     <p>Участники: </p>
-                    <p className="imghovTextBold">100 человек.</p>
+                    <p className="imghovTextBold">200 человек.</p>
                   </div>
                   <div>
                     <p>Призовой фонд:</p>
                     <p className="imghovTextBold">300,000 сом</p>
+                  </div>
+                  <p className="imghovBtn" onClick={() => navigate("/choice")}>
+                    Регистрация
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="tourForkimg0">
+              <img src={tour0} alt="error" className="tourForkimg01" />
+              <div className="imghovBlock imghovBlock10">
+                <p className="imghovTitle">Кибер безопасность</p>
+                <div className="imghovInfo">
+                  <div>
+                    <p>Участники: </p>
+                    <p className="imghovTextBold">100 человек.</p>
+                  </div>
+                  <div>
+                    <p>Призовой фонд:</p>
+                    <p className="imghovTextBold">200,000 сом</p>
                   </div>
                   <p className="imghovBtn" onClick={() => navigate("/choice")}>
                     Регистрация

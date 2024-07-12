@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import downloadicon from "../../../assets/downloadicon.svg";
 import Checkbox from "@mui/material/Checkbox";
 import "./RegisterForm.css";
 import { Breadcrumbs, InputLabel, Link } from "@mui/material";
@@ -9,6 +8,7 @@ import { useAuth } from "../../../context/AuthContextProvider";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import not404 from "../../../assets/not404.svg";
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -1228,8 +1228,17 @@ const RegisterForm = () => {
               </button>
             </>
           ) : (
-            <></>
-            // <div>{navigate("/choice")}</div>
+            <div className="notFound_block">
+              {" "}
+              <img src={not404} alt="" className="notFound_img" />
+              <h3>
+                Страница, которую вы запрашиваете не найдена, не существует либо
+                временно не доступна
+              </h3>
+              <button onClick={() => navigate("/")} className="notFound_btn">
+                Перейти на главную
+              </button>
+            </div>
           )}
         </div>
       </div>
