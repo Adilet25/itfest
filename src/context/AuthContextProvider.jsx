@@ -9,7 +9,7 @@ const API = "https://backitfest.pythonanywhere.com";
 
 const AuthContextProvider = ({ children }) => {
   const [role, setRole] = useState(null);
-  const [errorr, setErrorr] = useState();
+  const [errorr, setErrorr] = useState("");
   const [regSt, setRegSt] = useState(false);
 
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ const AuthContextProvider = ({ children }) => {
         console.log(JSON.stringify(formData));
       }
     } catch (err) {
-      errorr = err;
+      setErrorr(err);
       console.error("Error:", err);
     }
   }

@@ -23,7 +23,7 @@ const RegisterForm = () => {
   const [checked, setChecked] = useState(false);
   const [inpBtnSt, setInpBtnSt] = useState(false);
 
-  const { role, register, setRegSt, regSt } = useAuth();
+  const { role, register, setRegSt, regSt, errorr } = useAuth();
 
   const [Surname, setSurname] = useState("");
   const [Name, setName] = useState("");
@@ -443,12 +443,14 @@ const RegisterForm = () => {
                 Регистрация прошла успешно!
               </Alert>
             </div>
-          ) : (
+          ) : errorr.length > 1 ? (
             <div className="regFormSucces">
               <Alert severity="error">
                 Упс, проблема! Попробуйте снова позже или перепроверьте данные!{" "}
               </Alert>
             </div>
+          ) : (
+            <></>
           )}
           <h2>Регистрация</h2>
           {role == "EXPO" ? (
