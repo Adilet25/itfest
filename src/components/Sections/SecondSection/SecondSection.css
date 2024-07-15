@@ -59,7 +59,8 @@
 }
 #secondBlock_text {
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 .secondBlock_org {
   text-align: center;
@@ -75,7 +76,13 @@
   flex-wrap: wrap;
 }
 .secondBlock_sponsors > img {
-  width: 10rem;
+  width: 5rem;
+}
+.logobig {
+  width: 10rem !important;
+}
+.logopat {
+  width: 18rem !important;
 }
 .secondMain_spon {
   width: 90%;
@@ -140,6 +147,15 @@
 
   .secondMain_first > p {
     font-size: 0.9rem;
+  }
+  .secondBlock_sponsors > img {
+    width: 5rem;
+  }
+  .logobig {
+    width: 10rem !important;
+  }
+  .logopat {
+    width: 14rem !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -209,6 +225,10 @@
 @media screen and (max-width: 720px) {
   .secondMain_second {
     height: 20rem;
+  }
+  .secondBlock_sponsors {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
 }
 

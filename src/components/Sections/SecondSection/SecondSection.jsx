@@ -38,10 +38,10 @@ const SecondSection = () => {
         <p id="secondBlock_text">Организаторы</p>
         <div className="secondBlock_sponsors">
           {/* <img src={logo4} alt="" /> */}
-          <img src={logo2} alt="" />
+          <img src={logo2} alt="" className="logobig" />
           <img src={logo6} alt="" />
-          <img src={kgpat} alt="error" id="" />
-          <img src={resimg} alt="" />
+          <img src={kgpat} alt="error" className="logopat" />
+          <img src={resimg} alt="" className="logobig" />
           {/* <img src={kia} alt="" /> */}
           <img src={logo1} alt="" />
           {/* <img src={logo7} alt="" /> */}
@@ -106,10 +106,10 @@ const SecondSection = () => {
             height="315"
             src="https://www.youtube.com/embed/gHgD57ytup0?si=qqb-GzT0a_TA_Ger"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
         <div className="secondMain_spon">

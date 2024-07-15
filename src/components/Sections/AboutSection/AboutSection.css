@@ -21,9 +21,10 @@
   flex-direction: column;
   height: 100%;
   padding: 2rem 2rem 0 2rem;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
-.swiper-slider {
+.swiper-slide {
   margin: 0 auto;
 }
 .expoAbout_div > h2 {
@@ -34,16 +35,7 @@
 .exp1 > p {
   margin-bottom: 1rem;
 }
-.exp1,
-.exp3 {
-  background: linear-gradient(
-    #8816ca00,
-    #8816caf6,
-    #8816ca,
-    #8816caf6,
-    #8816ca00
-  );
-}
+
 .expTextBold {
   font-weight: 700;
 }

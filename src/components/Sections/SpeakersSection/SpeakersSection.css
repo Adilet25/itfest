@@ -80,6 +80,25 @@
 }
 .showSwip {
   margin-top: 2rem;
+  padding: 3rem 0;
+  height: 70vh;
+}
+.swiper-slide {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide > img {
+  /* width: 100%; */
+  height: 100%;
+}
+.swiper-button-next {
+  margin-left: 5rem;
+}
+.swiper-button-prev {
+  margin-right: 5rem;
 }
 @media screen and (max-width: 1024px) {
   .speakList {
@@ -93,6 +112,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .showSwip {
+    width: 90%;
+    height: 40vh;
+  }
   .speakList {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

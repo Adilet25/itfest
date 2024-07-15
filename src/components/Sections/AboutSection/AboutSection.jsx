@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutSection.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const AboutSection = () => {
   return (
@@ -13,10 +13,11 @@ const AboutSection = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 0,
+            delay: 1000,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]}
+          navigation={true}
           loop={true}
           freeMode={true}
           breakpoints={{

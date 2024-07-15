@@ -17,6 +17,8 @@ import dabce from "../../../assets/showprogramm/dabce.png";
 import "./SpeakersSection.css";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import "swiper/css/navigation";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Navigation } from "swiper/modules";
 
@@ -61,7 +63,7 @@ const SpeakersSection = () => {
           </div>
         </div>
       </div>
-      <div className="showBlock_main">
+      {/* <div className="showBlock_main">
         <h2 className="showBlock_title">ШОУ-ПРОГРАММА</h2>
         <h3 className="showBlock_title2">Хэдлайнеры</h3>
         <img src={showimg} alt="error" className="showBlock_img" />
@@ -75,48 +77,55 @@ const SpeakersSection = () => {
           <img src={dabce} alt="" />
           <img src={laser} alt="" />
         </div>
+      </div> */}
+      <div className="container">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          navigation={true}
+          coverflowEffect={{
+            rotate: -50,
+            stretch: 100,
+            depth: 50,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          modules={[EffectCoverflow, Navigation]}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            425: { slidesPerView: 1.5 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 },
+          }}
+          className="showSwip"
+        >
+          <SwiperSlide>
+            <img src={cosplay} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cinema} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={photobudka} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={animators} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={puzir} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={artobjects} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={dabce} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={laser} alt="" />
+          </SwiperSlide>
+        </Swiper>
       </div>
-      {/* <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={2}
-        navigation={true}
-        coverflowEffect={{
-          rotate: -50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        modules={[EffectCoverflow, Navigation]}
-        className="showSwip"
-      >
-        <SwiperSlide>
-          <img src={cosplay} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={cinema} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={photobudka} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={animators} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={puzir} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={artobjects} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={dabce} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={laser} alt="" />
-        </SwiperSlide>
-      </Swiper> */}
     </div>
   );
 };
