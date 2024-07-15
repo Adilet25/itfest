@@ -142,7 +142,7 @@ const Navbar = () => {
               <div></div>
             )}
           </div>
-          <p className="navBlock_nav" onClick={() => navigate("/choice")}>
+          <p className="navBlock_btn" onClick={() => navigate("/choice")}>
             Регистрация
           </p>
           <div className="navDrawer">

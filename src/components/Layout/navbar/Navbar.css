@@ -4,14 +4,17 @@
   align-items: center;
   justify-content: space-between;
   color: #fff;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.bg2 {
+  position: relative;
+  z-index: 2 !important;
 }
 .navBlock_logo {
   width: 5rem;
 }
 
-.bg2 {
-  background-color: #3b2069;
-}
 .navBlock_nav {
   cursor: pointer;
   margin-right: 1rem;
@@ -76,13 +79,50 @@
 }
 .MuiDrawer-paper {
   padding-top: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 .navDrop {
   z-index: 5;
 }
+.navDrop {
+  position: absolute;
+  text-align: end;
+  top: 2rem;
+  right: 2rem;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+  background: #800bf5;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: 0.4s;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+.navBlock_btn {
+  border-radius: 56px;
+  width: auto;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  animation: AnimationName 2s ease infinite;
+  background: linear-gradient(90deg, #25c6f9, #800bf5);
+}
 
 @media screen and (max-width: 1024px) {
   .navBlock_nav {
+    display: none;
+  }
+  .navBlock_btn {
     display: none;
   }
   .navBlock_mini {

@@ -31,11 +31,11 @@ const HomePage = () => {
       <Layout>
         <MainSection />
         <SecondSection />
-        <AboutSection />
+        {/* <AboutSection />
         <TournamentsSection />
         <ExpoSection />
         <WorkSection />
-        <SpeakersSection />
+        <SpeakersSection /> */}
       </Layout>
     </div>
   );
