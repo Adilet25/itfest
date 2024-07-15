@@ -23,10 +23,6 @@ const MainSection = () => {
           </div>
         </div>
       </div>
-      <div className="tearsBlock">
-        <img src={el} alt="error" id="el1" />
-        <img src={el} alt="error" id="el2" />
-      </div>
     </>
   );
 };

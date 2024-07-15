@@ -9,9 +9,6 @@ import SecondSection from "../components/Sections/SecondSection/SecondSection";
 // import SpeakersSection from "../components/Sections/SpeakersSection/SpeakersSection";
 import Layout from "../components/Layout/Layout";
 
-const PartnerSection = lazy(() =>
-  import("../components/Sections/PartnerSection/PartnerSection")
-);
 const TournamentsSection = lazy(() =>
   import("../components/Sections/TournamentsSection/TournamentsSection")
 );
@@ -34,10 +31,9 @@ const HomePage = () => {
       <Layout>
         <MainSection />
         <SecondSection />
-        <PartnerSection />
+        <AboutSection />
         <TournamentsSection />
         <ExpoSection />
-        <AboutSection />
         <WorkSection />
         <SpeakersSection />
       </Layout>

@@ -38,24 +38,7 @@
   font-weight: 600;
   font-size: 0.7em;
 }
-.tearsBlock {
-  position: relative;
-}
-#el1 {
-  position: absolute;
-  left: -150px;
-  bottom: -30vh;
-  z-index: 9;
-  width: 30%;
-}
-#el2 {
-  position: absolute;
-  right: -0px;
-  bottom: -10rem;
-  transform: rotate(90deg);
-  width: 20%;
-  z-index: 9;
-}
+
 @media screen and (max-width: 1345px) {
   .firstMain_text {
     font-size: 2em;
@@ -70,30 +53,7 @@
     font-size: 0.7em;
   }
 }
-@media screen and (max-width: 1100px) {
-  #el1 {
-    left: -100px;
-    bottom: -25vh;
-    width: 30%;
-  }
-  #el2 {
-    right: -0px;
-    bottom: -15vh;
-    width: 20%;
-  }
-}
-@media screen and (max-width: 860px) {
-  #el1 {
-    left: -100px;
-    bottom: -20vh;
-    width: 30%;
-  }
-  #el2 {
-    right: -0px;
-    bottom: -25vh;
-    width: 25%;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .firstMain_text {
     font-size: 2em;
@@ -117,11 +77,6 @@
   }
   .firstBlock_logo {
     width: 55%;
-  }
-  #el1 {
-    left: -20px;
-    bottom: -19vh;
-    width: 30%;
   }
 }
 @media screen and (max-width: 450px) {

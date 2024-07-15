@@ -1,14 +1,12 @@
 .secondBlock_main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  gap: 1rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .bg3 {
   background: linear-gradient(#3b2069, #4c278494, #3b2069),
     url("/src/assets/backgroundinfopage.png");
-  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
@@ -16,15 +14,13 @@
   background: linear-gradient(
     #ffffff00,
     rgba(8, 212, 253, 0.2),
-    rgba(8, 212, 253, 0.3),
-    rgba(8, 212, 253, 0.2),
-    #3b2069
+    rgba(8, 212, 253, 0.3)
   );
   backdrop-filter: blur(5px);
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
-
   padding: 10rem 2rem 5rem 1rem;
 }
 .secondMain_first > h2 {
@@ -38,27 +34,14 @@
   z-index: 2;
 }
 
-.secondMain_second {
-  padding: 20rem 0 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .secondMain_third {
-  background: linear-gradient(
-    #ffffff00,
-    rgba(8, 212, 253, 0.2),
-    rgba(8, 212, 253, 0.3),
-    rgba(8, 212, 253, 0.2),
-    #3b2069
-  );
+  width: 100%;
+  background: linear-gradient(rgba(8, 212, 253, 0.3), #3b2069);
   backdrop-filter: blur(5px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10rem 0rem 5rem 2rem;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 3rem;
   text-align: center;
   font-weight: 700;
   font-size: 1rem;
@@ -70,65 +53,99 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.secondBlock_sponsors2 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: center;
-  gap: 2rem;
-}
 
 #secondBlock_img {
   width: 100% !important;
 }
 #secondBlock_text {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   font-size: 2rem;
 }
 .secondBlock_org {
-  display: none;
   text-align: center;
-}
-.secondBlock_org2 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  grid-column: 1/4;
-  width: 90%;
-  margin: 0 auto;
-}
-.secondBlock_sponsors > img {
-  margin: 1rem auto;
-}
-.secondBlock_sponsors2 > img {
-  margin: 1rem auto;
 }
 
+.secondBlock_sponsors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.secondBlock_sponsors > img {
+  width: 10rem;
+}
+.secondMain_spon {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  grid-column: 2/3;
+}
+.swiperImgs {
+  width: 10rem;
+}
+.imgneko {
+  width: 7rem;
+}
+.secPartner {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.swiper-wrapper {
+  align-items: center;
+}
+.secondSpon_img {
+  width: 20rem;
+  margin: 0 auto;
+}
+.secondMain_second {
+  width: 90%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondMain_second > iframe {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
 @media screen and (max-width: 1024px) {
-  .secondBlock_main {
-    grid-template-columns: repeat(3, 30%);
-    gap: 0;
-    justify-content: space-between;
-  }
   .bg3 {
     background-size: cover;
   }
-  .secondMain_second {
-    padding-top: 15rem;
+  .secondMain_second > iframe {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
   }
   .secondMain_third {
     font-size: 1rem;
   }
+  .secondMain_second {
+    height: 30rem;
+  }
   .fs2 {
     font-size: 1.5rem;
   }
-  .secondBlock_sponsors2 > img {
-    width: 6rem;
-  }
+
   .secondMain_first > p {
     font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 900px) {
+  .secondMain_second {
+    height: 20rem;
+  }
   .secondMain_second {
     padding-top: 0rem;
   }
@@ -159,103 +176,69 @@
   .secondMain_first > h2 {
     font-size: 1.5rem;
   }
-  .secondBlock_main {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #secondBlock_img {
-    width: 70% !important ;
-  }
+
   .secondBlock_sponsors {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90vw;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    padding: 0 2rem 0 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
   .secondBlock_sponsors > img {
-    width: 4.5rem;
+    margin: 0 auto;
+    width: 7rem;
   }
-  #secondBlock_text {
-    font-size: 2rem;
-    margin: 4rem 0;
-  }
+
   .secondMain_third {
     background: linear-gradient(
       rgba(8, 212, 253, 0.3),
       rgba(8, 212, 253, 0.2),
       #3b2069
     );
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
     color: #fff;
   }
-  .secondBlock_org2 {
-    display: none;
+  .secondMain_spon {
+    grid-column: 1/2;
   }
-  .secondBlock_org {
-    display: grid;
+  .secondSpon_img {
+    width: 20rem;
+    margin: 0 auto;
   }
 }
-@media screen and (max-width: 645px) {
-  .secondBlock_sponsors {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    width: 90%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    padding: 0;
-  }
-  .secondBlock_sponsors > img {
-    width: 6rem;
+@media screen and (max-width: 720px) {
+  .secondMain_second {
+    height: 20rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .secondMain_second {
+    height: 15rem;
+  }
+  .secondMain_third {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secondSpon_img {
+    width: 15rem;
+  }
   .secondMain_first > p {
     font-size: 1rem;
   }
   .fs2 {
     font-size: 2rem;
   }
-  .secondMain_third {
-    /* display: none; */
-    font-size: 1rem;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-content: center;
-  }
-  .secondBlock_sponsors {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    width: 90%;
-    flex-wrap: wrap;
+  .secondMain_second > iframe {
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-    margin-bottom: 5rem;
-    padding: 0;
   }
 }
 @media screen and (max-width: 375px) {
-  .secondBlock_sponsors {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    width: 90%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    padding: 0;
+  .secondMain_second {
+    height: 10rem;
+  }
+  .secondMain_third {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
