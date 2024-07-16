@@ -17,6 +17,7 @@ import menuicon from "../../../assets/menu.svg";
 
 import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
 
 const Navbar = () => {
   const [arrowSt, setArrowSt] = useState(false);

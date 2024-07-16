@@ -9,6 +9,7 @@
 }
 .secondBlock_el {
   position: absolute;
+  z-index: 1;
 }
 .secondBlock_title {
   font-weight: 400;
@@ -43,6 +44,10 @@
 }
 .secondBlock_video > div > p {
   margin-top: 1.5rem;
+}
+.secondViedo {
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 1200px) {
   .secondViedo {

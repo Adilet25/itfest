@@ -1,4 +1,4 @@
-.bg9 {
+/* .bg9 {
   background: linear-gradient(#3a63d1, #6d91ff00, #3a63d1),
     url("/src/assets/bgspe.png");
   background-repeat: no-repeat;
@@ -91,7 +91,6 @@
   justify-content: center;
 }
 .swiper-slide > img {
-  /* width: 100%; */
   height: 100%;
 }
 .swiper-button-next {
@@ -115,6 +114,7 @@
   .showSwip {
     width: 90%;
     height: 40vh;
+    
   }
   .speakList {
     display: grid;
@@ -164,4 +164,4 @@
   .showBlock_img > img {
     width: 20vmax;
   }
-}
+} */

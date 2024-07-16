@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  /* top: -5rem; */
 }
 .firstBlock_logo {
   z-index: 2;
@@ -30,7 +29,6 @@
   font-size: 2.5em;
   font-weight: 400;
   text-align: center;
-  /* text-justify: inter-cluster; */
   z-index: 3;
 }
 .firstMain_text > p {
@@ -100,6 +98,7 @@
   .secondBlock_sponsors {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     align-items: center;
     width: 90%;
   }
@@ -139,13 +138,28 @@
 }
 @media screen and (max-width: 450px) {
   .firstMain_text {
-    font-size: 1.2em;
+    font-size: 1.5em;
     width: 100%;
   }
+
+  .firstBlock_logo {
+    width: 100%;
+  }
+  .logopat {
+    width: 13rem !important;
+  }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .firstMain_text {
     font-size: 1em;
     width: 100%;
+  }
+  .secondBlock_sponsors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logopat {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }

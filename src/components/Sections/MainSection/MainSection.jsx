@@ -13,9 +13,49 @@ import logo5 from "../../../assets/sponsorslogo/logo5.svg";
 import logo6 from "../../../assets/sponsorslogo/logo6.svg";
 import logo7 from "../../../assets/sponsorslogo/logo7.svg";
 import logo8 from "../../../assets/sponsorslogo/logo8.svg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import "./MainSection.css";
 
 const MainSection = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      "#planet1",
+      {
+        y: -10,
+      },
+      {
+        y: 10,
+        repeat: -1,
+        yoyo: true,
+        duration: 2,
+      }
+    );
+    gsap.fromTo(
+      ".firstBlock_main",
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        delay: 0.5,
+      }
+    );
+    gsap.fromTo(
+      ".secondBlock_org",
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        delay: 0.5,
+      }
+    );
+  }, []);
   return (
     <>
       <div className="bg1">
@@ -31,9 +71,14 @@ const MainSection = () => {
               <p>2024 в Центральной Азии</p>
               <p id="firstDate">16 - 17 августа</p>
             </div>
-            <img src={el3} alt="" className="mainBgColor" />
+            <img src={el3} alt="" id="el3" className="mainBgColor" />
 
-            <img src={planetlogo} alt="error" className="firstBlock_logo" />
+            <img
+              src={planetlogo}
+              alt="error"
+              id="planet1"
+              className="firstBlock_logo"
+            />
           </div>
           <div className="secondBlock_org">
             <p id="secondBlock_text">Организаторы</p>

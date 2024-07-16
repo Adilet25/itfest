@@ -1,4 +1,4 @@
-.bg5 {
+/* .bg5 {
   background: linear-gradient(#4d0b92, #510ca000, #28209f),
     url("/src/assets/bgtour.png");
   background-repeat: no-repeat;
@@ -31,10 +31,6 @@
   margin-bottom: 4rem;
 }
 .tourFork_block {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: nowrap; */
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   position: relative;
@@ -51,7 +47,6 @@
   margin: 0 auto;
 }
 .tourFor_img > img {
-  /* position: absolute; */
   width: 14rem;
   cursor: pointer;
   transition: 0.4s;
@@ -251,12 +246,7 @@
     flex-direction: row;
     width: 90%;
   }
-  /* .tourFork_block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    height: auto;
-  } */
+
   .tourForkimg01,
   .tourForkimg11,
   .tourForkimg21,
@@ -306,12 +296,6 @@
   }
 }
 @media screen and (max-width: 570px) {
-  /* .tourFork_block {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    height: auto;
-  } */
   .tourForkimg01,
   .tourForkimg11,
   .tourForkimg21,
@@ -339,4 +323,4 @@
   .bg5 {
     padding: 0;
   }
-}
+} */

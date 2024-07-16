@@ -1,0 +1,95 @@
+.secPartner {
+  width: 100%;
+  margin-top: 1rem;
+}
+.partnerBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  margin-top: 4rem;
+  background: linear-gradient(#14063d, #ffffff00, #14063d),
+    url("/src/assets/partbg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.swiper-slide {
+  width: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.swiperImgs {
+  width: 10rem;
+  margin: 0 auto;
+}
+.imgneko {
+  width: 7rem;
+}
+.partnerBlock_title {
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 5px;
+}
+.partnerRank_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.partnerRank2,
+.partnerRank1 {
+  width: 33%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.partnerRank2 {
+  transform: scale(0.8);
+}
+
+.partnerTour_block {
+  margin-bottom: 2rem;
+}
+.partnerBlock_imgs {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.partnerBlock_imgs > img {
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .partnerBlock_imgs > img {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partnerBlock_imgs {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  #lastTour {
+    grid-column: 1/4;
+  }
+  .partnerRank_block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bigSpon {
+    order: 1;
+  }
+}

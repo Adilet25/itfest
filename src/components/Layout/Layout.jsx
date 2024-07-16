@@ -1,13 +1,21 @@
 import React, { Suspense } from "react";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
+import { CircularProgress } from "@mui/material";
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <Suspense fallback={<p>Loading...</p>}>{children}</Suspense>
-      {/* <Footer /> */}
+      <Suspense
+        fallback={
+          <div className="loadingblock">
+            <CircularProgress />
+          </div>
+        }
+      >
+        {children}
+      </Suspense>
     </div>
   );
 };
