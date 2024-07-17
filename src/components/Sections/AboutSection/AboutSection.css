@@ -1,28 +1,25 @@
-/* .bg7 {
-  background: linear-gradient(#3a63d1, #6d91ff00, #3a63d1),
-    url("/src/assets/bgab.png");
+.bg7 {
+  background: url("/src/assets/aboutbg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
+  background-position: center;
 }
 .expoAbout {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   width: 90%;
+  font-family: "Montserrat", sans-serif;
 }
 .expoAbout_div {
   width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  padding: 2rem 2rem 0 2rem;
+  height: fit-content;
+  padding: 2rem;
   margin: 0 auto;
   margin-bottom: 2rem;
+  border-radius: 25px;
+  position: relative;
+  border: #fff 3px solid;
 }
 .swiper-slide {
   margin: 0 auto;
@@ -42,7 +39,22 @@
 .exp3 {
   line-height: 1.5rem;
 }
-@media screen and (max-width: 1024px) {
+.exp2 {
+  padding-bottom: 20% !important;
+}
+.aboutImg {
+  position: absolute;
+  width: 6rem;
+}
+.aboutImg1 {
+  top: -2rem;
+  right: 0;
+}
+.aboutImg2 {
+  bottom: -2rem;
+  right: 0;
+}
+/* @media screen and (max-width: 1024px) {
   .expoAbout {
     flex-direction: column;
   }

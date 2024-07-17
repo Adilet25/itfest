@@ -222,3 +222,94 @@
     font-size: 2.1rem;
   }
 } */
+.expoMain_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 3px #fff solid;
+  border-radius: 70px;
+  width: 80%;
+  margin: 4rem auto;
+
+  padding: 3rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+.expo_Main_text {
+  position: absolute;
+  top: -1rem;
+  background-color: #14063d;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.expoVariants {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.expoVariants_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+}
+
+.expo1 {
+  background: linear-gradient(140deg, #a1a4a4, #e3e3e4, #868686);
+}
+.expo2 {
+  background: linear-gradient(140deg, #ffbf00, #fadc82, #c0930d);
+}
+
+.expoiMG {
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+.expoImg1 {
+  border: #ffffff 3px solid;
+}
+.expoImg2 {
+  border: #ffffff 3px solid;
+}
+
+.expoVar_text {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.expoPrice {
+  margin: 1rem 0;
+  font-family: "Russo one", sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.expoPriceLined {
+  margin-bottom: 1rem;
+  font-family: "Russo one", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: line-through;
+}
+.expoBtn {
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expoBtn1 {
+  background: linear-gradient(90deg, #d1a4ff, #2663ff);
+}
+.expoBtn2 {
+  background: linear-gradient(90deg, #ff9162, #d66230);
+}

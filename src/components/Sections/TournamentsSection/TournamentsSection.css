@@ -1,8 +1,7 @@
-/* .bg5 {
-  background: linear-gradient(#4d0b92, #510ca000, #28209f),
-    url("/src/assets/bgtour.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.bg5 {
+  background: url("/src/assets/bgtour.svg");
+  background-repeat: repeat;
+  background-size: 100% 100%;
   padding-top: 5rem;
 }
 .tourBlock_main {
@@ -15,6 +14,7 @@
 .tourText_block {
   font-weight: 700;
   font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
 .tourText_bigger {
   font-size: 3.9rem;
@@ -41,6 +41,7 @@
 }
 .tourFork_blockParent {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -323,4 +324,4 @@
   .bg5 {
     padding: 0;
   }
-} */
+}
