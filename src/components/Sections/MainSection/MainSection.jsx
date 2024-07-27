@@ -67,7 +67,7 @@ const MainSection = () => {
                 МЕЖДУНАРОДНЫЙ
                 <br /> МАСШТАБНЫЙ IT ФЕСТИВАЛЬ
               </p>
-              <h2>CYBER KOL</h2>
+              <h2>CYBER KYRGYZSTAN</h2>
               <p>2024 в Центральной Азии</p>
               <p id="firstDate">16 - 17 августа</p>
             </div>

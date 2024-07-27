@@ -313,3 +313,27 @@
 .expoBtn2 {
   background: linear-gradient(90deg, #ff9162, #d66230);
 }
+@media screen and (max-width:835px) {
+  .expoPrice{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .expoVariants{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:543px) {
+  .expoMain_block{
+    padding: 2rem;
+  }
+}
+@media screen and (max-width:375px) {
+
+
+  .expoMain_block{
+    padding: 2rem 1rem ;
+    border-radius: 50px;
+  }
+}

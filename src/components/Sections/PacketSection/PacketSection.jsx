@@ -1,29 +1,22 @@
 import React from "react";
 import "./PacketSection.css";
+import htp from "../../../assets/sponsorslogo/htp.svg"
+import cyberw from "../../../assets/expoimg/cyberwoman.png"
 
 const PacketSection = () => {
   return (
     <div className="packetMain_block">
-      <h2 className="packet_Main_text">ПАКЕТЫ УЧАСТИЯ</h2>
+      <h2 className="packet_Main_text">НОМИНАЦИЯ CYBER WOMAN</h2>
       <div className="packetVariants">
-        <div className="packetVariants_block var1">
-          <h3 className="packetVar_text">БЕСПЛАТНЫЙ</h3>
-          <img src="" alt="" className="packetiMG packetImg1" />
-          <p className="packetPrice">0 сом</p>
+        <div className="pack1block">
+          <div className="pack1"><h2>СОВМЕСТНО С</h2> <img src={htp} alt="" className="packetImg2"/></div>
+          <p className="packeInfo">Если вы или ваша коллега сделали значительный вклад в развитие IT, проявили лидерство, внедрили инновационные решения или вдохновили других, эта номинация для вас!</p>
           <p className="packetBtn packBtn1">Подробнее</p>
         </div>
-        <div className="packetVariants_block var2">
-          <h3 className="packetVar_text">СТАНДАРТ</h3>
-          <img src="" alt="" className="packetiMG packetImg2" />
-          <p className="packetPrice">5000 сом</p>
-          <p className="packetBtn packBtn2">Подробнее</p>
-        </div>{" "}
-        <div className="packetVariants_block var3">
-          <h3 className="packetVar_text">ЛЮКС</h3>
-          <img src="" alt="" className="packetiMG packetImg3" />
-          <p className="packetPrice">10 000 сом</p>
-          <p className="packetBtn packBtn3">Подробнее</p>
+        <div className="pack2block ">
+            <img src={cyberw} alt="" className="packetiMG packetImg3" />
         </div>
+
       </div>
     </div>
   );

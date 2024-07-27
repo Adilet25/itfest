@@ -54,6 +54,27 @@
   bottom: -2rem;
   right: 0;
 }
+@media screen and (max-width:1220px) {
+  .expoAbout {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+  }
+  .exp2{
+    grid-row: 2/3;
+  }
+
+}
+@media screen and (max-width:1024px) {
+  .expoAbout {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+.exp2{
+  padding-bottom: 2rem !important;
+  grid-row: 3 /3;
+}
+
+}
 /* @media screen and (max-width: 1024px) {
   .expoAbout {
     flex-direction: column;

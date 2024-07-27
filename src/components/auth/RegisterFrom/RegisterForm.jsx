@@ -269,9 +269,7 @@ const RegisterForm = () => {
         !Email ||
         !Country ||
         !compProd
-        // ||
-        // !reg_logo ||
-        // !reg_check
+     
       ) {
         alert("Заполните все поля!");
         return;
@@ -291,8 +289,7 @@ const RegisterForm = () => {
         Country: Country,
         Phone_number: PhoneNumber,
         Company_Product: compProd,
-        Logo: reg_logo,
-        Register_check: reg_check,
+ 
       };
       emailVal();
       if (message.length < 1) {
@@ -316,8 +313,7 @@ const RegisterForm = () => {
         !Country ||
         !PhoneNumber ||
         !compProd ||
-        !reg_logo ||
-        !reg_check ||
+ 
         !theme2
       ) {
         console.log(Country, PhoneNumber, compProd, reg_logo, reg_check);
@@ -339,8 +335,6 @@ const RegisterForm = () => {
         Country: Country,
         Phone_number: PhoneNumber,
         Company_Product: compProd,
-        Logo: reg_logo,
-        Register_check: reg_check,
         Theme: theme2,
       };
       emailVal();
@@ -589,35 +583,7 @@ const RegisterForm = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className="formBlockFile">
-                  <p className="formInp_label">Логотип компании</p>
-                  <button className="formInp_labels" onClick={handlePicklogo}>
-                    Загрузите файл
-                  </button>
-                  <input
-                    type="file"
-                    placeholder="Загрузить"
-                    className="formInput2"
-                    id="inpfile2"
-                    onChange={handlelogo}
-                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
-                    ref={filePickerlogo}
-                  />
-                </div>
-                <div className="formBlockFile">
-                  <p className="formInp_label">Свидетельство регистрации</p>
-                  <button className="formInp_labels" onClick={handlePick}>
-                    Загрузите файл
-                  </button>
-                  <input
-                    type="file"
-                    placeholder="Загрузите файл"
-                    id="inpfile2"
-                    onChange={handlefile}
-                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
-                    ref={filePicker}
-                  />
-                </div>
+   
               </div>
               <div className="regCheck">
                 <Checkbox
@@ -1090,7 +1056,7 @@ const RegisterForm = () => {
                 <div className="formBlock label2">
                   <div>
                     <p className="formInp_label">
-                      Опишите товары или услуги уомпании
+                      Опишите товары или услуги компании
                     </p>
                     <textarea
                       className="formTextarea"
@@ -1098,35 +1064,7 @@ const RegisterForm = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className="formBlockFile">
-                  <p className="formInp_label">Логотип компании</p>
-                  <button className="formInp_labels" onClick={handlePick}>
-                    Загрузите файл
-                  </button>
-                  <input
-                    type="file"
-                    placeholder="Загрузить"
-                    className="formInput2"
-                    id="inpfile2"
-                    onChange={handlelogo}
-                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
-                    ref={filePicker}
-                  />
-                </div>
-                <div className="formBlockFile">
-                  <p className="formInp_label">Свидетельство регистрации</p>
-                  <button className="formInp_labels" onClick={handlePick}>
-                    Загрузите файл
-                  </button>
-                  <input
-                    type="file"
-                    placeholder="Загрузите файл"
-                    id="inpfile2"
-                    onChange={handlefile}
-                    accept="images/*,.jpg,.png,.jpeg,.svg,.gif,.web"
-                    ref={filePicker}
-                  />
-                </div>
+     
               </div>
               <div className="regCheck">
                 <Checkbox
