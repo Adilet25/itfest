@@ -1,18 +1,10 @@
 import React from "react";
-import logo from "../../../assets/logo.svg";
-import el from "../../../assets/elements/element1.svg";
 import resimg from "../../../assets/resimg.svg";
-import kgpat from "../../../assets/kgpat.svg";
+import inno from "../../../assets/inno.svg";
 import planetlogo from "../../../assets/elements/planet.svg";
 import el3 from "../../../assets/elements/el3.svg";
-import logo1 from "../../../assets/sponsorslogo/logo1.svg";
-import logo2 from "../../../assets/sponsorslogo/logo2.svg";
-import logo3 from "../../../assets/sponsorslogo/logo3.svg";
-import logo4 from "../../../assets/sponsorslogo/logo4.svg";
-import logo5 from "../../../assets/sponsorslogo/logo5.svg";
+import logo1 from "../../../assets/sponsorslogo/jk.png";
 import logo6 from "../../../assets/sponsorslogo/logo6.svg";
-import logo7 from "../../../assets/sponsorslogo/logo7.svg";
-import logo8 from "../../../assets/sponsorslogo/logo8.svg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./MainSection.css";
@@ -69,7 +61,7 @@ const MainSection = () => {
               </p>
               <h2>CYBER KYRGYZSTAN</h2>
               <p>2024 в Центральной Азии</p>
-              <p id="firstDate">16 - 17 августа</p>
+              <p id="firstDate">13 - 14 сентября</p>
             </div>
             <img src={el3} alt="" id="el3" className="mainBgColor" />
 
@@ -83,11 +75,11 @@ const MainSection = () => {
           <div className="secondBlock_org">
             <p id="secondBlock_text">Организаторы</p>
             <div className="secondBlock_sponsors">
-              <img src={logo2} alt="" className="logobig" />
-              <img src={logo1} alt="" />
-              <img src={kgpat} alt="error" className="logopat" />
-              <img src={resimg} alt="" className="logobig" />
-              <img src={logo6} alt="" />
+              <img src={inno} alt="error" className="logopat2" />
+              {/* <img src={logo2} alt="" className="logobig" /> */}
+              <img src={logo1} alt="" className="logopat"/>
+              {/* <img src={resimg} alt="" className="logobig" /> */}
+              <img src={logo6} alt="" className="logopat"/>
             </div>
           </div>
         </div>

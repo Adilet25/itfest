@@ -23,7 +23,7 @@ const RegisterForm = () => {
   const [checked, setChecked] = useState(false);
   const [inpBtnSt, setInpBtnSt] = useState(false);
 
-  const { role, register, setRegSt, regSt, errorr } = useAuth();
+  const { role, register, regSt, errorr } = useAuth();
 
   const [Surname, setSurname] = useState("");
   const [Name, setName] = useState("");
@@ -42,11 +42,6 @@ const RegisterForm = () => {
   const [activity, setactivity] = useState("");
 
   const [compProd, setcompprod] = useState("");
-  const [reg_logo, setreglogo] = useState("");
-  const [reg_check, setregcheck] = useState("");
-
-  const filePicker = useRef(null);
-  const filePickerlogo = useRef(null);
 
   function sendData(fork) {
     if (fork == "register_user/speaker/") {
@@ -388,20 +383,6 @@ const RegisterForm = () => {
   };
   const emailHandler = (e) => {
     setEmail(e.target.value);
-  };
-  const handlefile = (e) => {
-    setregcheck(e.target.files[0]);
-    console.log(reg_check);
-  };
-  const handlelogo = (e) => {
-    setreglogo(e.target.files[0]);
-    console.log(reg_logo);
-  };
-  const handlePicklogo = () => {
-    filePickerlogo.current.click();
-  };
-  const handlePick = () => {
-    filePicker.current.click();
   };
   return (
     <div className="regBlockbg">

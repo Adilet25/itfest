@@ -50,18 +50,19 @@ const SecondSection = () => {
       <div className="secondBlock_video">
         <div>
           <ReactPlayer
-            url="https://youtu.be/gHgD57ytup0?si=x63n42fUpjTr84xa"
+            url="https://youtu.be/h2vjZ7-a81w?si=1gvyhrirVFwMlRPj"
             className="secondViedo"
           />
         </div>
         <div className="secondVideo_text">
-          IT FEST 2024 "CYBER КӨЛ" — это крупнейшее технологическое событие в
+          IT FEST 2024 "CYBER KYRGYZSTAN" — это крупнейшее технологическое событие в
           Кыргызстане, посвященное инновациям в сфере информационных технологий.
           <p>
             Организуемое в формате фестиваля, IT FEST собирает ведущих
             специалистов, стартапы, инвесторов, студентов и энтузиастов
             технологий для обмена опытом, демонстрации последних технологических
             достижений и создания новых партнерских связей.
+            Место проведения:Гольф клуб «Кленовый Лист»
           </p>
         </div>
         <img src={el4} alt="" className="secondBlock_el" />

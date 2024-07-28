@@ -15,6 +15,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
+  margin-bottom: 2rem;
 }
 .swiper-slide {
   width: 100%;
@@ -64,11 +65,14 @@
 }
 .partnerBlock_imgs {
   margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(7, 1fr); */
 }
 .partnerBlock_imgs > img {
   margin: 0 auto;
+}
+.bigSpon{
+  width: 15rem;
 }
 @media screen and (max-width: 1024px) {
   .partnerBlock_imgs > img {
