@@ -37,7 +37,7 @@ const HomePage = () => {
         <TournamentsSection />
         <PacketSection />
         <ExpoSection />
-        {/* <WorkSection/> */}
+        <WorkSection/>
       </Layout>
     </div>
   );
