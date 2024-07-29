@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import expo1 from "../../../assets/expoimg/expo1.png";
 import expo2 from "../../../assets/expoimg/expo2.png";
 import cassa from "../../../assets/expoimg/cassa.png";
 import sale from "../../../assets/expoimg/sale.svg";
-
+import Alert from '@mui/material/Alert';
 import "./ExpoSection.css";
 import { useNavigate } from "react-router-dom";
 
 const ExpoSection = () => {
   const navigate = useNavigate();
+  const [alertSt,setAlertSt]=useState(false)
+  function handleMore(){
+    setAlertSt(true)
+    setTimeout(() => {
+      setAlertSt(false)
+    }, 10000);
+  }
   return (
     // <div className="bg6">
     //   <div className="container">
@@ -65,7 +72,11 @@ const ExpoSection = () => {
     //     </div>
     //   </div>
     // </div>
+
     <div className="expoMain_block">
+      {
+        alertSt?<div className="alert"><Alert severity="info">Для подробной информационнии позвоните или напишите в ватсап по номеру :+996 555 060 955</Alert></div>:null
+      }
       <h2 className="expo_Main_text">IT EXPO</h2>
       <div className="expoVariants">
         <div className="expoVariants_block expo1">
@@ -73,17 +84,17 @@ const ExpoSection = () => {
           <img src={expo1} alt="" className="expoiMG expoImg1" />
           <p className="expoPrice">21 000 сом</p>
           <p className="expoPriceLined">30 000 сом</p>
-
-          <p className="expoBtn expoBtn1">Подробнее</p>
+          <p className="expoBtn expoBtn1" onClick={()=>{handleMore()}}>
+            Подробнее
+            </p>
         </div>
         <div className="expoVariants_block expo2">
           <h3 className="expoVar_text">ГОЛД</h3>
           <img src={expo2} alt="" className="expoiMG expoImg2" />
           <p className="expoPrice">49 000 сом</p>
           <p className="expoPriceLined">70 000 сом</p>
-
           <p className="expoBtn expoBtn2">Подробнее</p>
-        </div>{" "}
+        </div>
       </div>
     </div>
   );

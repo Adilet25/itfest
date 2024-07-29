@@ -306,6 +306,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.alert{
+  position: fixed;
+  z-index: 120;
+  top: 1rem;
 }
 .expoBtn1 {
   background: linear-gradient(90deg, #d1a4ff, #2663ff);

@@ -22,6 +22,9 @@ const PacketSection = lazy(() =>
 const ExpoSection = lazy(() =>
   import("../components/Sections/ExpoSection/ExpoSection")
 );
+const WorkSection = lazy(() =>
+  import("../components/Sections/WorkSection/WorkSection")
+);
 
 const HomePage = () => {
   return (
@@ -34,6 +37,7 @@ const HomePage = () => {
         <TournamentsSection />
         <PacketSection />
         <ExpoSection />
+        {/* <WorkSection/> */}
       </Layout>
     </div>
   );

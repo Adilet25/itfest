@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .pack1{
   display: flex;
@@ -70,6 +71,11 @@
 }
 .packBtn1 {
   background: linear-gradient(90deg, #800BF5, #25C6F9);
+}
+.alert2{
+  position: fixed;
+  z-index: 120;
+  top: 1rem;
 }
 
 @media screen and (max-width:1240px) {
