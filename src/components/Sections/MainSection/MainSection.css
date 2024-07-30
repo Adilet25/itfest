@@ -69,7 +69,7 @@
   width: 5rem;
 }
 .logobig {
-  width: 10rem !important;
+  width: 6rem !important;
 }
 .logopat2 {
   width: 17rem !important;
@@ -77,6 +77,14 @@
 .logopat {
   width: 10rem !important;
 }
+.logobigb{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .mainBgColor {
   position: absolute;
   top: 20;
@@ -98,9 +106,9 @@
   }
 }
 @media screen and (max-width: 930px) {
-  .secondBlock_sponsors {
-    
-    flex-direction: column;
+  .secondBlock_sponsors>img {
+    margin: 2rem;
+    /* flex-direction: column; */
   }
   .logopat,.logopat2 {
     margin-bottom: 2rem;
@@ -109,6 +117,9 @@
 
 }
 @media screen and (max-width: 768px) {
+  .logobigbb{
+    width: 25rem;
+  }
   .firstMain_text {
     font-size: 2em;
     width: 100%;
@@ -135,6 +146,9 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .logobigbb{
+    width: 16rem;
+  }
   .firstMain_text {
     font-size: 1.5em;
     width: 100%;
@@ -145,6 +159,9 @@
   }
   .logopat {
     width: 6rem !important;
+  }
+  .logopat2 {
+    width: 10rem !important;
   }
 }
 @media screen and (max-width: 375px) {
