@@ -68,7 +68,7 @@ const MainSection = () => {
               </p>
               <h2>CYBER KYRGYZSTAN</h2>
               <p>2024 в Центральной Азии</p>
-              <p id="firstDate">13 - 14 сентября</p>
+              <p id="firstDate">14 - 15 сентября</p>
             </div>
             <img src={el3} alt="" id="el3" className="mainBgColor" />
 
