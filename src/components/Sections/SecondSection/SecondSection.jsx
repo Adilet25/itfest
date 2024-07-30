@@ -50,7 +50,7 @@ const SecondSection = () => {
       <div className="secondBlock_video">
         <div>
           <ReactPlayer
-            url="https://youtu.be/h2vjZ7-a81w?si=1gvyhrirVFwMlRPj"
+            url="https://youtu.be/73UCO3atSpc?si=OaK7fiW67_D1D6co"
             className="secondViedo"
           />
         </div>
