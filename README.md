@@ -1,8 +1,10 @@
+# The new version of website is on branch "v2"
+# The old version on "main"
 # React + Vite
+The ui library’s:
 mui
 swiperjs
 gsap
-react-router-dom
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
