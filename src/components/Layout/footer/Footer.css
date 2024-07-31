@@ -48,3 +48,25 @@
   margin-left: 1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .footerInfo_nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 570px) {
+  .footerInfo_nav {
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  .footerInfo_nav {
+    margin: 2rem 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+  }
+}
