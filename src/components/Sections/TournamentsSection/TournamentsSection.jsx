@@ -7,6 +7,8 @@ import tour3 from "../../../assets/tour/dron demonstration.png";
 import tour4 from "../../../assets/tour/hakaton.png";
 import tour5 from "../../../assets/tour/mobilography.png";
 import tour6 from "../../../assets/tour/robotics.png";
+import anim from "../../../assets/animations/anim.webm";
+import anim2 from "../../../assets/animations/anim.gif";
 
 import "./TournamentsSection.css";
 
@@ -43,20 +45,23 @@ const TournamentsSection = () => {
                     </div>
                     <p>Игровые дисциплины: </p>
                     <p className="">
-                      {" "}
-                      Counter-Strike 2 <br /> Dota 2 <br />
+                      Counter-Strike 2
+                      <br />
                       PUBG
+                      <br />
                     </p>
                   </div>
                   <div>
                     <p>Призовой фонд:</p>
-                    <p className="imghovTextBold">1,500,000 сом</p>
+                    <p className="imghovTextBold">1,000,000 сом</p>
                   </div>
                   <p className="imghovBtn" onClick={() => navigate("/choice")}>
                     Регистрация
                   </p>
                 </div>
               </div>
+
+              <img src={anim2} alt="" className="anim" />
             </div>
             <div className="tourFor_img tourForkimg2">
               <img src={tour2} alt="error" className="tourForkimg21" />
@@ -230,6 +235,7 @@ const TournamentsSection = () => {
                     </p>
                   </div>
                 </div>
+                <img src={anim2} alt="" className="anim" />
               </div>
             </SwiperSlide>
             <SwiperSlide>

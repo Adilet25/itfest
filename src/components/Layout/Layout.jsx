@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </Suspense>
+      <Footer/>
     </div>
   );
 };
