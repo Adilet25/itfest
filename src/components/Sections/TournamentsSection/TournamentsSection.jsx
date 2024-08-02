@@ -7,7 +7,6 @@ import tour3 from "../../../assets/tour/dron demonstration.png";
 import tour4 from "../../../assets/tour/hakaton.png";
 import tour5 from "../../../assets/tour/mobilography.png";
 import tour6 from "../../../assets/tour/robotics.png";
-import anim from "../../../assets/animations/anim.webm";
 import anim2 from "../../../assets/animations/anim.gif";
 
 import "./TournamentsSection.css";
@@ -16,8 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-import { EffectCards } from "swiper/modules";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const TournamentsSection = () => {
   const navigate = useNavigate();

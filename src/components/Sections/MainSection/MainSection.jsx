@@ -1,17 +1,14 @@
 import React from "react";
-import resimg from "../../../assets/resimg.svg";
-import inno from "../../../assets/inno.svg";
+import inno from "../../../assets/partnerslogo/inno.svg";
 import planetlogo from "../../../assets/elements/planet.svg";
 import el3 from "../../../assets/elements/el3.svg";
-import logo1 from "../../../assets/sponsorslogo/jk.png";
 import adm from "../../../assets/partnerslogo/adm.svg";
 import mer from "../../../assets/partnerslogo/mer.png";
 import udp from "../../../assets/partnerslogo/udp.svg";
 import kia from "../../../assets/partnerslogo/kial.svg";
 import htp from "../../../assets/partnerslogo/htp.svg";
-import jkm from "../../../assets/jkm.svg";
-
-import logo6 from "../../../assets/sponsorslogo/logo6.svg";
+import jkm from "../../../assets/partnerslogo/jkm.svg";
+import logo6 from "../../../assets/partnerslogo/logo6.svg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./MainSection.css";
@@ -80,7 +77,7 @@ const MainSection = () => {
             />
           </div>
           <div className="logobigb">
-            <img src={jkm} alt="" className="logobigbb"/>
+            <img src={jkm} alt="" className="logobigbb" />
           </div>
           <div className="secondBlock_org">
             <p id="secondBlock_text">Организаторы</p>
@@ -89,10 +86,8 @@ const MainSection = () => {
               <img src={kia} alt="error" className="logobig" />
               <img src={udp} alt="error" className="logobig" />
               <img src={htp} alt="error" className="logopat" />
-              <img src={inno} alt="error" className="logopat2" />
               <img src={adm} alt="" className="logopat" />
-              {/* <img src={resimg} alt="" className="logobig" /> */}
-              <img src={logo6} alt="" className="logobig"/>
+              <img src={logo6} alt="" className="logobig" />
             </div>
           </div>
         </div>
