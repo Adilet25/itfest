@@ -85,9 +85,9 @@ const MainSection = () => {
               <img src={mer} alt="error" className="logobig" />
               <img src={kia} alt="error" className="logobig" />
               <img src={udp} alt="error" className="logobig" />
+              <img src={logo6} alt="error" className="logobig" />
+              <img src={adm} alt="error" className="logopat" />
               <img src={htp} alt="error" className="logopat" />
-              <img src={adm} alt="" className="logopat" />
-              <img src={logo6} alt="" className="logobig" />
             </div>
           </div>
         </div>
