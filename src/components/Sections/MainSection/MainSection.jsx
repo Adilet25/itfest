@@ -89,21 +89,45 @@ const MainSection = () => {
               МЕРОПРИЯТИЕ ПРОВОДИТСЯ <br /> ПРИ ПОДДЕРЖКЕ
             </p>
             <div className="logobigb">
-              <img loading="lazy" src={kia} alt="error" className="logobigbb" />
+              <img
+                loading="lazy"
+                src={kia}
+                alt="error"
+                className="logobigbb"
+                id="kia"
+              />
+              <img
+                loading="lazy"
+                src={mer}
+                alt="error"
+                className="logobigbb"
+                id="mer"
+              />
+              <img
+                loading="lazy"
+                src={jkm}
+                alt=""
+                className="logobigbb"
+                id="jkm"
+              />
+              <img
+                loading="lazy"
+                src={imp}
+                alt=""
+                className="logobigbb"
+                id="ros"
+              />
+            </div>
+          </div>
+          <div className="secondBlock_org">
+            <p className="secondBlock_text">Организаторы</p>
+            <div className="secondBlock_sponsors">
               <img
                 loading="lazy"
                 src={udp}
                 alt="error"
                 className="logobigbb2"
               />
-              <img loading="lazy" src={jkm} alt="" className="logobigbb" />
-              <img loading="lazy" src={imp} alt="" className="logobigbb" />
-            </div>
-          </div>
-          <div className="secondBlock_org">
-            <p className="secondBlock_text">Организаторы</p>
-            <div className="secondBlock_sponsors">
-              <img loading="lazy" src={mer} alt="error" className="logobig" />
               <img loading="lazy" src={logo6} alt="error" className="logobig" />
               <img loading="lazy" src={adm} alt="error" className="logopat" />
               <img loading="lazy" src={htp} alt="error" className="logopat" />
