@@ -41,7 +41,7 @@ const AboutSection = () => {
             вдохновление на создание новых решений и технологий, способных
             изменить мир к лучшему.
           </p>{" "}
-          <img src={el5} alt="" className="aboutImg aboutImg1" />
+          <img loading="lazy" src={el5} alt="" className="aboutImg aboutImg1" />
         </div>{" "}
         <div className="expoAbout_div exp2">
           <h2>ЦЕЛИ</h2>
@@ -52,7 +52,7 @@ const AboutSection = () => {
             молодые IT-стартапы,обеспечить обучение и профессиональное развитие
             для будущих лидеров отрасли.
           </p>
-          <img src={el6} alt="" className="aboutImg aboutImg2" />
+          <img loading="lazy" src={el6} alt="" className="aboutImg aboutImg2" />
         </div>{" "}
         <div className="expoAbout_div exp3">
           <h2>ЗАДАЧИ</h2>
@@ -82,7 +82,7 @@ const AboutSection = () => {
               Кыргызстана и других стран СНГ.
             </li>
           </ul>
-          <img src={el7} alt="" className="aboutImg aboutImg1" />
+          <img loading="lazy" src={el7} alt="" className="aboutImg aboutImg1" />
         </div>
       </div>
     </div>

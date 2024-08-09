@@ -148,7 +148,12 @@ const Navbar = () => {
           </p>
           <div className="navDrawer">
             <Button onClick={toggleDrawer(true)}>
-              <img src={menuicon} alt="error" style={{ width: "2.6rem" }} />
+              <img
+                loading="lazy"
+                src={menuicon}
+                alt="error"
+                style={{ width: "2.6rem" }}
+              />
             </Button>
             <Drawer anchor={"right"} open={open2} onClose={toggleDrawer(false)}>
               <Box

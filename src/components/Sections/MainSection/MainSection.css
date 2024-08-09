@@ -49,7 +49,7 @@
   position: relative;
   margin-bottom: 7rem;
 }
-#secondBlock_text {
+.secondBlock_text {
   margin-bottom: 2rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -77,12 +77,25 @@
 .logopat {
   width: 10rem !important;
 }
-.logobigb{
-  width: 100%;
+.logobigb {
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2rem;
+}
+.logobigbb {
+  width: 12rem;
+}
+.logobigbb2 {
+  width: 9rem;
+}
+.logobigm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
 }
 
 .mainBgColor {
@@ -105,20 +118,33 @@
     font-size: 0.7em;
   }
 }
+@media screen and (max-width: 1024px) {
+  .logobigbb {
+    width: 7rem;
+  }
+  .logobigbb2 {
+    width: 4rem;
+  }
+}
 @media screen and (max-width: 930px) {
-  .secondBlock_sponsors>img {
+  .secondBlock_sponsors > img {
     margin: 2rem;
     /* flex-direction: column; */
   }
-  .logopat,.logopat2 {
+  .logopat,
+  .logopat2 {
     margin-bottom: 2rem;
   }
-
-
 }
 @media screen and (max-width: 768px) {
-  .logobigbb{
-    width: 25rem;
+  .logobigb {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .logobigbb,
+  .logobigbb2 {
+    margin: 0 auto;
   }
   .firstMain_text {
     font-size: 2em;
@@ -146,9 +172,6 @@
   }
 }
 @media screen and (max-width: 450px) {
-  .logobigbb{
-    width: 16rem;
-  }
   .firstMain_text {
     font-size: 1.5em;
     width: 100%;
@@ -169,5 +192,4 @@
     font-size: 1em;
     width: 100%;
   }
-
 }

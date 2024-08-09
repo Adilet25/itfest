@@ -30,19 +30,19 @@ const PartnerSection = () => {
       <div className="partnerRank_block">
         <div className="partnerRank1">
           <h2 className="partnerBlock_title">Генеральный спонсор</h2>
-          <img src={visa} alt="" className="partSec bigSpon" />
+          <img loading="lazy" src={visa} alt="" className="partSec bigSpon" />
         </div>{" "}
       </div>
       {/* <div className="partnerTour_block">
         <h2 className="partnerBlock_title">Спонсоры турниров</h2>
         <div className="partnerBlock_imgs">
-          <img src={profile} alt="" />
-          <img src={profile} alt="" />
-          <img src={profile} alt="" />
-          <img src={profile} alt="" />
-          <img src={profile} alt="" />
-          <img src={profile} alt="" />
-          <img src={profile} alt="" id="lastTour" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" />
+          <img loading="lazy" src={profile} alt="" id="lastTour" />
         </div>
       </div> */}
       <h2 className="partnerBlock_title">Партнёры</h2>
@@ -75,28 +75,68 @@ const PartnerSection = () => {
           className="parnterSwiper"
         >
           <SwiperSlide>
-            <img src={logo14} alt="error" className="parnterSwiper" />
+            <img
+              loading="lazy"
+              src={logo14}
+              alt="error"
+              className="parnterSwiper"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={logo10} alt="error" className="swiperImgs imgneko" />
+            <img
+              loading="lazy"
+              src={logo10}
+              alt="error"
+              className="swiperImgs imgneko"
+            />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={logo13} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo13}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={logo5} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo5}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={logo17} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo17}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={logo2} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo2}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={logo3} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo3}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={logo4} alt="error" className="swiperImgs" />
+            <img
+              loading="lazy"
+              src={logo4}
+              alt="error"
+              className="swiperImgs"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -130,34 +170,44 @@ const PartnerSection = () => {
           className="parnterSwiper"
         >
           <SwiperSlide>
-            <img src={euro} alt="error" className="parnterSwiper" />
+            <img
+              loading="lazy"
+              src={euro}
+              alt="error"
+              className="parnterSwiper"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={kg} alt="error" className="swiperImgs imgneko" />
+            <img
+              loading="lazy"
+              src={kg}
+              alt="error"
+              className="swiperImgs imgneko"
+            />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={ktrk} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={ktrk} alt="error" className="swiperImgs" />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={kak} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={kak} alt="error" className="swiperImgs" />
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <img src={rg} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={rg} alt="error" className="swiperImgs" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={tv15} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={tv15} alt="error" className="swiperImgs" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={tv1} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={tv1} alt="error" className="swiperImgs" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={eltr} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={eltr} alt="error" className="swiperImgs" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={gr} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={gr} alt="error" className="swiperImgs" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={sxod} alt="error" className="swiperImgs" />
+            <img loading="lazy" src={sxod} alt="error" className="swiperImgs" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -5,16 +5,15 @@ import expo2 from "../../../assets/expoimg/expo2.png";
 import "./ExpoSection.css";
 
 const ExpoSection = () => {
-
   return (
     // <div className="bg6">
     //   <div className="container">
     //     <h3 className="expo_title">IT EXPO</h3>
     //     <div className="expoBlock_main">
     //       <div>
-    //         <img src={expo1} alt="error" className="expoBlock_img" />
+    //         <img loading="lazy" src={expo1} alt="error" className="expoBlock_img" />
     //         <div className="expoBlock_info infoBlock1">
-    //           <img src={cassa} alt="error" className="expoCassa" />
+    //           <img loading="lazy" src={cassa} alt="error" className="expoCassa" />
     //           <h3>Стандарт</h3>
     //           <h5>21 000 сом</h5>
     //           <h4>30 000 сом</h4>
@@ -27,13 +26,13 @@ const ExpoSection = () => {
     //             <li>Сертификат участия</li>
     //             <li>Удлинитель</li>
     //           </ul>
-    //           <img src={sale} alt="error" className="expoSale_img" />
+    //           <img loading="lazy" src={sale} alt="error" className="expoSale_img" />
     //         </div>
     //       </div>
     //       <div>
-    //         <img src={expo2} alt="error" className="expoBlock_img" />
+    //         <img loading="lazy" src={expo2} alt="error" className="expoBlock_img" />
     //         <div className="expoBlock_info infoBlock2">
-    //           <img src={cassa} alt="error" className="expoCassa" />
+    //           <img loading="lazy" src={cassa} alt="error" className="expoCassa" />
     //           <h3>Голд</h3>
     //           <h5>49 000 сом</h5>
     //           <h4>70 000 сом</h4>
@@ -51,7 +50,7 @@ const ExpoSection = () => {
     //             <li>Гала ужин</li>
     //             <li>Удлинитель</li>
     //           </ul>
-    //           <img src={sale} alt="error" className="expoSale_img" />
+    //           <img loading="lazy" src={sale} alt="error" className="expoSale_img" />
     //         </div>
     //       </div>
     //     </div>
@@ -68,19 +67,29 @@ const ExpoSection = () => {
       <div className="expoVariants">
         <div className="expoVariants_block expo1">
           <h3 className="expoVar_text">СТАНДАРТ</h3>
-          <img src={expo1} alt="" className="expoiMG expoImg1" />
+          <img loading="lazy" src={expo1} alt="" className="expoiMG expoImg1" />
           <p className="expoPrice">21 000 сом</p>
           <p className="expoPriceLined">30 000 сом</p>
-          <a className="expoBtn expoBtn1" href="https://wa.me/996555060955" target="_blank">
+          <a
+            className="expoBtn expoBtn1"
+            href="https://wa.me/996555060955"
+            target="_blank"
+          >
             Подробнее
-            </a>
+          </a>
         </div>
         <div className="expoVariants_block expo2">
           <h3 className="expoVar_text">ГОЛД</h3>
-          <img src={expo2} alt="" className="expoiMG expoImg2" />
+          <img loading="lazy" src={expo2} alt="" className="expoiMG expoImg2" />
           <p className="expoPrice">49 000 сом</p>
           <p className="expoPriceLined">70 000 сом</p>
-          <a className="expoBtn expoBtn2" href="https://wa.me/996555060955" target="_blank">Подробнее</a>
+          <a
+            className="expoBtn expoBtn2"
+            href="https://wa.me/996555060955"
+            target="_blank"
+          >
+            Подробнее
+          </a>
         </div>
       </div>
     </div>

@@ -8,6 +8,8 @@ import udp from "../../../assets/partnerslogo/udp.svg";
 import kia from "../../../assets/partnerslogo/kial.svg";
 import htp from "../../../assets/partnerslogo/htp.svg";
 import jkm from "../../../assets/partnerslogo/jkm.svg";
+import imp from "../../../assets/partnerslogo/imp.svg";
+
 import logo6 from "../../../assets/partnerslogo/logo6.svg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -67,7 +69,13 @@ const MainSection = () => {
               <p>2024 в Центральной Азии</p>
               <p id="firstDate">28 - 29 сентября</p>
             </div>
-            <img src={el3} alt="" id="el3" className="mainBgColor" />
+            <img
+              loading="lazy"
+              src={el3}
+              alt=""
+              id="el3"
+              className="mainBgColor"
+            />
 
             <img
               src={planetlogo}
@@ -76,18 +84,29 @@ const MainSection = () => {
               className="firstBlock_logo"
             />
           </div>
-          <div className="logobigb">
-            <img src={jkm} alt="" className="logobigbb" />
+          <div className="logobigm">
+            <p className="secondBlock_text">
+              МЕРОПРИЯТИЕ ПРОВОДИТСЯ <br /> ПРИ ПОДДЕРЖКЕ
+            </p>
+            <div className="logobigb">
+              <img loading="lazy" src={kia} alt="error" className="logobigbb" />
+              <img
+                loading="lazy"
+                src={udp}
+                alt="error"
+                className="logobigbb2"
+              />
+              <img loading="lazy" src={jkm} alt="" className="logobigbb" />
+              <img loading="lazy" src={imp} alt="" className="logobigbb" />
+            </div>
           </div>
           <div className="secondBlock_org">
-            <p id="secondBlock_text">Организаторы</p>
+            <p className="secondBlock_text">Организаторы</p>
             <div className="secondBlock_sponsors">
-              <img src={mer} alt="error" className="logobig" />
-              <img src={kia} alt="error" className="logobig" />
-              <img src={udp} alt="error" className="logobig" />
-              <img src={logo6} alt="error" className="logobig" />
-              <img src={adm} alt="error" className="logopat" />
-              <img src={htp} alt="error" className="logopat" />
+              <img loading="lazy" src={mer} alt="error" className="logobig" />
+              <img loading="lazy" src={logo6} alt="error" className="logobig" />
+              <img loading="lazy" src={adm} alt="error" className="logopat" />
+              <img loading="lazy" src={htp} alt="error" className="logopat" />
             </div>
           </div>
         </div>

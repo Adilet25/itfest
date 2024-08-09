@@ -66,7 +66,7 @@ const SecondSection = () => {
           </p>
           <p>Место проведения:Газпром-детям</p>
         </div>
-        <img src={el4} alt="" className="secondBlock_el" />
+        <img loading="lazy" src={el4} alt="" className="secondBlock_el" />
       </div>
       <div className="secondInfo">
         <div>

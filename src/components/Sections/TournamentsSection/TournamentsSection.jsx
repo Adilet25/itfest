@@ -24,14 +24,24 @@ const TournamentsSection = () => {
       <div className="container">
         <div className="tourBlock_main">
           <p className="tourText_block">Тематические разделы фестиваля</p>
-          <img src={chek} alt="error" className="tourBlock_img" />
+          <img
+            loading="lazy"
+            src={chek}
+            alt="error"
+            className="tourBlock_img"
+          />
         </div>
 
         <div className="tourFork_blockParent">
           <p className="tourText_small">Турниры по направлениям</p>
           <div className="tourFork_block">
             <div className="tourFor_img tourForkimg1">
-              <img src={tour1} alt="error" className="tourForkimg11" />
+              <img
+                loading="lazy"
+                src={tour1}
+                alt="error"
+                className="tourForkimg11"
+              />
               <div className="imghovBlock imghovBlock2 ">
                 <p className="imghovTitle">Киберспорт</p>
 
@@ -59,10 +69,15 @@ const TournamentsSection = () => {
                 </div>
               </div>
 
-              <img src={anim2} alt="" className="anim" />
+              <img loading="lazy" src={anim2} alt="" className="anim" />
             </div>
             <div className="tourFor_img tourForkimg2">
-              <img src={tour2} alt="error" className="tourForkimg21" />
+              <img
+                loading="lazy"
+                src={tour2}
+                alt="error"
+                className="tourForkimg21"
+              />
               <div className="imghovBlock imghovBlock3">
                 <p className="imghovTitle">Дизайн и 3D</p>
                 <div className="imghovInfo">
@@ -86,7 +101,12 @@ const TournamentsSection = () => {
               </div>
             </div>
             <div className="tourFor_img tourForkimg3">
-              <img src={tour3} alt="error" className="tourForkimg31" />
+              <img
+                loading="lazy"
+                src={tour3}
+                alt="error"
+                className="tourForkimg31"
+              />
               <div className="imghovBlock imghovBlock4">
                 <p className="imghovTitle">Дрон демонстрация</p>
                 <div className="imghovInfo">
@@ -105,7 +125,12 @@ const TournamentsSection = () => {
               </div>
             </div>
             <div className="tourFor_img tourForkimg4">
-              <img src={tour4} alt="error" className="tourForkimg41" />
+              <img
+                loading="lazy"
+                src={tour4}
+                alt="error"
+                className="tourForkimg41"
+              />
               <div className="imghovBlock imghovBlock5">
                 <p className="imghovTitle">Хакатон</p>
                 <div className="imghovInfo">
@@ -124,7 +149,12 @@ const TournamentsSection = () => {
               </div>
             </div>
             <div className="tourFor_img tourForkimg5">
-              <img src={tour5} alt="error" className="tourForkimg51" />
+              <img
+                loading="lazy"
+                src={tour5}
+                alt="error"
+                className="tourForkimg51"
+              />
               <div className="imghovBlock imghovBlock6">
                 <p className="imghovTitle">Мобилография</p>
                 <div className="imghovInfo">
@@ -143,7 +173,12 @@ const TournamentsSection = () => {
               </div>
             </div>
             <div className="tourFor_img tourForkimg6">
-              <img src={tour6} alt="error" className="tourForkimg61" />
+              <img
+                loading="lazy"
+                src={tour6}
+                alt="error"
+                className="tourForkimg61"
+              />
               <div className="imghovBlock imghovBlock7">
                 <p className="imghovTitle">Робототехника</p>
                 <div className="imghovInfo">
@@ -162,7 +197,12 @@ const TournamentsSection = () => {
               </div>
             </div>
             <div className="tourFor_img tourForkimg0">
-              <img src={tour0} alt="error" className="tourForkimg01" />
+              <img
+                loading="lazy"
+                src={tour0}
+                alt="error"
+                className="tourForkimg01"
+              />
               <div className="imghovBlock imghovBlock10">
                 <p className="imghovTitle">Кибер безопасность</p>
                 <div className="imghovInfo">
@@ -204,7 +244,12 @@ const TournamentsSection = () => {
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg1">
-                <img src={tour1} alt="error" className="tourForkimg11" />
+                <img
+                  loading="lazy"
+                  src={tour1}
+                  alt="error"
+                  className="tourForkimg11"
+                />
                 <div className="imghovBlock imghovBlock2 ">
                   <p className="imghovTitle">Киберспорт</p>
 
@@ -233,13 +278,18 @@ const TournamentsSection = () => {
                     </p>
                   </div>
                 </div>
-                <img src={anim2} alt="" className="anim" />
+                <img loading="lazy" src={anim2} alt="" className="anim" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg2">
-                <img src={tour2} alt="error" className="tourForkimg21" />
+                <img
+                  loading="lazy"
+                  src={tour2}
+                  alt="error"
+                  className="tourForkimg21"
+                />
                 <div className="imghovBlock imghovBlock3">
                   <p className="imghovTitle">Дизайн и 3D</p>
                   <div className="imghovInfo">
@@ -269,7 +319,12 @@ const TournamentsSection = () => {
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg3">
-                <img src={tour3} alt="error" className="tourForkimg31" />
+                <img
+                  loading="lazy"
+                  src={tour3}
+                  alt="error"
+                  className="tourForkimg31"
+                />
                 <div className="imghovBlock imghovBlock4">
                   <p className="imghovTitle">Дрон демонстрация</p>
                   <div className="imghovInfo">
@@ -293,7 +348,12 @@ const TournamentsSection = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="tourFor_img tourForkimg4">
-                <img src={tour4} alt="error" className="tourForkimg41" />
+                <img
+                  loading="lazy"
+                  src={tour4}
+                  alt="error"
+                  className="tourForkimg41"
+                />
                 <div className="imghovBlock imghovBlock5">
                   <p className="imghovTitle">Хакатон</p>
                   <div className="imghovInfo">
@@ -318,7 +378,12 @@ const TournamentsSection = () => {
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg5">
-                <img src={tour5} alt="error" className="tourForkimg51" />
+                <img
+                  loading="lazy"
+                  src={tour5}
+                  alt="error"
+                  className="tourForkimg51"
+                />
                 <div className="imghovBlock imghovBlock6">
                   <p className="imghovTitle">Мобилография</p>
                   <div className="imghovInfo">
@@ -343,7 +408,12 @@ const TournamentsSection = () => {
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg6">
-                <img src={tour6} alt="error" className="tourForkimg61" />
+                <img
+                  loading="lazy"
+                  src={tour6}
+                  alt="error"
+                  className="tourForkimg61"
+                />
                 <div className="imghovBlock imghovBlock7">
                   <p className="imghovTitle">Робототехника</p>
                   <div className="imghovInfo">
@@ -368,7 +438,12 @@ const TournamentsSection = () => {
             <SwiperSlide>
               {" "}
               <div className="tourFor_img tourForkimg0">
-                <img src={tour0} alt="error" className="tourForkimg01" />
+                <img
+                  loading="lazy"
+                  src={tour0}
+                  alt="error"
+                  className="tourForkimg01"
+                />
                 <div className="imghovBlock imghovBlock10">
                   <p className="imghovTitle">Кибер безопасность</p>
                   <div className="imghovInfo">

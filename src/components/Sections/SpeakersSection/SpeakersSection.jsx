@@ -30,7 +30,7 @@
 //           <h2 className="speakBlock_title">СПИКЕРЫ</h2>
 //           <div className="speakList">
 //             <div className="speakBlock_card">
-//               <img src={speak2} alt="" className="speakBlock_circle" />
+//               <img loading="lazy" src={speak2} alt="" className="speakBlock_circle" />
 //               <h3>Айжан Алишерова-Дуймаз</h3>
 //               <p>
 //                 Прошла обучение в школе трекеров в июле этого года и теперь
@@ -38,7 +38,7 @@
 //               </p>
 //             </div>
 //             <div className="speakBlock_card">
-//               <img src={speak3} alt="" className="speakBlock_circle" />
+//               <img loading="lazy" src={speak3} alt="" className="speakBlock_circle" />
 //               <h3>Динара Руслан</h3>
 //               <p>
 //                 Генеральный директор CODIFY, советник премьер-министра КР
@@ -47,7 +47,7 @@
 //             </div>
 
 //             <div className="speakBlock_card">
-//               <img src={speak4} alt="" className="speakBlock_circle" />
+//               <img loading="lazy" src={speak4} alt="" className="speakBlock_circle" />
 //               <h3>Жылдыз Исабекова</h3>
 //               <p>
 //                 Страновой директор Accelerate Prosperity.Окончила факультет
@@ -56,7 +56,7 @@
 //               </p>
 //             </div>
 //             <div className="speakBlock_card">
-//               <img src={speak5} alt="" className="speakBlock_circle" />
+//               <img loading="lazy" src={speak5} alt="" className="speakBlock_circle" />
 //               <h3>Пархад Базаков</h3>
 //               <p>Применение ИИ в стартапах ,senior data scientist</p>
 //             </div>
@@ -66,16 +66,16 @@
 //       {/* <div className="showBlock_main">
 //         <h2 className="showBlock_title">ШОУ-ПРОГРАММА</h2>
 //         <h3 className="showBlock_title2">Хэдлайнеры</h3>
-//         <img src={showimg} alt="error" className="showBlock_img" />
+//         <img loading="lazy" src={showimg} alt="error" className="showBlock_img" />
 //         <div className="showBlock_img">
-//           <img src={cosplay} alt="" />
-//           <img src={animators} alt="" />
-//           <img src={cinema} alt="" />
-//           <img src={photobudka} alt="" />
-//           <img src={puzir} alt="" />
-//           <img src={artobjects} alt="" />
-//           <img src={dabce} alt="" />
-//           <img src={laser} alt="" />
+//           <img loading="lazy" src={cosplay} alt="" />
+//           <img loading="lazy" src={animators} alt="" />
+//           <img loading="lazy" src={cinema} alt="" />
+//           <img loading="lazy" src={photobudka} alt="" />
+//           <img loading="lazy" src={puzir} alt="" />
+//           <img loading="lazy" src={artobjects} alt="" />
+//           <img loading="lazy" src={dabce} alt="" />
+//           <img loading="lazy" src={laser} alt="" />
 //         </div>
 //       </div> */}
 //       <div className="container">
@@ -101,28 +101,28 @@
 //           className="showSwip"
 //         >
 //           <SwiperSlide>
-//             <img src={cosplay} alt="" />
+//             <img loading="lazy" src={cosplay} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={cinema} alt="" />
+//             <img loading="lazy" src={cinema} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={photobudka} alt="" />
+//             <img loading="lazy" src={photobudka} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={animators} alt="" />
+//             <img loading="lazy" src={animators} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={puzir} alt="" />
+//             <img loading="lazy" src={puzir} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={artobjects} alt="" />
+//             <img loading="lazy" src={artobjects} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={dabce} alt="" />
+//             <img loading="lazy" src={dabce} alt="" />
 //           </SwiperSlide>
 //           <SwiperSlide>
-//             <img src={laser} alt="" />
+//             <img loading="lazy" src={laser} alt="" />
 //           </SwiperSlide>
 //         </Swiper>
 //       </div>

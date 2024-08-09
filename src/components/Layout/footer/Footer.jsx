@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footerBlock">
         <div className="footerInfo_Block">
           <div className="footerInfo">
-            <img src={logo} alt="" className="footerLogo" />
+            <img loading="lazy" src={logo} alt="" className="footerLogo" />
             <div className="footerInfo_nav">
               <p>О мероприятии</p>
               <p>Участникам</p>
@@ -20,13 +20,23 @@ const Footer = () => {
             </div>
             <div className="footerSocial_Block">
               <a href="https://wa.me/996555060955" target="_blank">
-                <img src={what} alt="" className="footerSocial" />
+                <img
+                  loading="lazy"
+                  src={what}
+                  alt=""
+                  className="footerSocial"
+                />
               </a>
               <a
                 href="https://www.instagram.com/cyberkol.kg?igsh=MTB3aTl5dXJ4aGp4Nw=="
                 target="_blank"
               >
-                <img src={inst} alt="" className="footerSocial" />
+                <img
+                  loading="lazy"
+                  src={inst}
+                  alt=""
+                  className="footerSocial"
+                />
               </a>
             </div>
           </div>

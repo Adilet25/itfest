@@ -1175,7 +1175,7 @@ const RegisterForm = () => {
           ) : (
             <div className="notFound_block">
               {" "}
-              <img src={not404} alt="" className="notFound_img" />
+              <img loading="lazy" src={not404} alt="" className="notFound_img" />
               <h3>
                 Страница, которую вы запрашиваете не найдена, не существует либо
                 временно не доступна
