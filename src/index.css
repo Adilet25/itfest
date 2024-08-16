@@ -15,7 +15,7 @@ body {
   background-size: cover;
   color: white;
   padding: 3rem 0;
-  height: calc(100vh - 6rem);
+  min-height: calc(100vh - 6rem);
 }
 .container {
   width: 90%;

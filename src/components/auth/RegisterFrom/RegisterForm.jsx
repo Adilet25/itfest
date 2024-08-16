@@ -264,7 +264,6 @@ const RegisterForm = () => {
         !Email ||
         !Country ||
         !compProd
-     
       ) {
         alert("Заполните все поля!");
         return;
@@ -284,7 +283,6 @@ const RegisterForm = () => {
         Country: Country,
         Phone_number: PhoneNumber,
         Company_Product: compProd,
- 
       };
       emailVal();
       if (message.length < 1) {
@@ -308,7 +306,6 @@ const RegisterForm = () => {
         !Country ||
         !PhoneNumber ||
         !compProd ||
- 
         !theme2
       ) {
         console.log(Country, PhoneNumber, compProd, reg_logo, reg_check);
@@ -564,7 +561,6 @@ const RegisterForm = () => {
                     ></textarea>
                   </div>
                 </div>
-   
               </div>
               <div className="regCheck">
                 <Checkbox
@@ -703,8 +699,8 @@ const RegisterForm = () => {
                               <MenuItem value={"Counter-Strike 2"}>
                                 Counter-Strike 2
                               </MenuItem>
-                              <MenuItem value={"PUBG"}>PUBG</MenuItem>
-                              <MenuItem value={"Dota 2"}>Dota 2</MenuItem>
+                              {/* <MenuItem value={"PUBG"}>PUBG</MenuItem>
+                              <MenuItem value={"Dota 2"}>Dota 2</MenuItem> */}
                             </Select>
                           </FormControl>
                         </div>
@@ -1045,7 +1041,6 @@ const RegisterForm = () => {
                     ></textarea>
                   </div>
                 </div>
-     
               </div>
               <div className="regCheck">
                 <Checkbox
@@ -1175,7 +1170,12 @@ const RegisterForm = () => {
           ) : (
             <div className="notFound_block">
               {" "}
-              <img loading="lazy" src={not404} alt="" className="notFound_img" />
+              <img
+                loading="lazy"
+                src={not404}
+                alt=""
+                className="notFound_img"
+              />
               <h3>
                 Страница, которую вы запрашиваете не найдена, не существует либо
                 временно не доступна

@@ -59,7 +59,7 @@ const ChooseForm = () => {
             >
               <h3>Участник IT EXPO</h3>
             </div>
-            <div
+            {/* <div
               className="choice5"
               onClick={() => {
                 setRole("Speaker");
@@ -67,7 +67,7 @@ const ChooseForm = () => {
               }}
             >
               <h3>Спикер</h3>
-            </div>
+            </div> */}
             <div
               className="choice1"
               onClick={() => {
@@ -75,9 +75,9 @@ const ChooseForm = () => {
                 navigate("/reg");
               }}
             >
-              <h3>Участник Food зоны</h3>
+              <h3>Участник Фудкорт</h3>
             </div>
-            <div
+            {/* <div
               className="choice2"
               onClick={() => {
                 setRole("Master");
@@ -85,7 +85,7 @@ const ChooseForm = () => {
               }}
             >
               <h3>Участник мастер-классов</h3>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

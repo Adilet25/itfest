@@ -18,10 +18,11 @@
 }
 .chooseRole_choice {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+
   width: 100%;
   gap: 1rem;
-
   color: #6414c0;
 }
 .choice1,
@@ -44,7 +45,7 @@
 .choice5:hover {
   box-shadow: 0px 5px 10px rgb(75, 75, 75);
 }
-.choice1 {
+/* .choice1 {
   grid-column: 1/4;
 }
 .choice2 {
@@ -58,12 +59,13 @@
 }
 .choice5 {
   grid-column: 5/7;
-}
+} */
 @media screen and (max-width: 768px) {
   .chooseRole_choice {
-    grid-template-columns: repeat(2, 1fr) !important;
+    /* grid-template-columns: repeat(2, 1fr) !important; */
+    grid-template-columns: repeat(1, 1fr) !important;
   }
-  .choice1 {
+  /* .choice1 {
     grid-column: auto !important;
     height: 8rem !important;
   }
@@ -82,13 +84,13 @@
   .choice5 {
     grid-column: auto !important;
     height: 8rem !important;
-  }
+  } */
 }
 @media screen and (max-width: 425px) {
   .chooseRole_choice {
     grid-template-columns: repeat(1, 1fr) !important;
   }
-  .choice1 {
+  /* .choice1 {
     grid-column: auto !important;
     height: 8rem !important;
   }
@@ -107,5 +109,5 @@
   .choice5 {
     grid-column: auto !important;
     height: 8rem !important;
-  }
+  } */
 }
